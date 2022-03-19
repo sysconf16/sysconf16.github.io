@@ -67,7 +67,8 @@ small, sub, sup {
 
 hr {
   border-color: #8B0000; 
-  border-bottom: 5px double #8B0000; }
+  border-radius: 12px;
+  border-width: 3px; }
 
 a {
   text-decoration: none;
@@ -93,7 +94,8 @@ blockquote {
   padding-right: 0.8em;
   border-left: 5px solid #778899;
   margin-bottom: 2.5rem;
-  background-color: #DCDCDC; }
+  border-radius: 12px;
+  background-color: #FFFFFF; }
 
 blockquote p {
   margin-bottom: 0; }
@@ -105,7 +107,7 @@ img, video {
   margin-bottom: 2.5rem; }
 
 pre {
-  background-color: #DCDCDC;
+  background-color: #FFFFFF;
   display: block;
   padding: 1em;
   overflow-x: auto;
@@ -116,7 +118,7 @@ pre {
 code {
   font-size: 0.9em;
   padding: 0 0.5em;
-  background-color: #DCDCDC;
+  background-color: #FFFFFF;
   white-space: pre-wrap; }
 
 pre > code {
@@ -132,10 +134,10 @@ table {
 
 td, th {
   padding: 0.5em;
-  border-bottom: 1px solid #DCDCDC; }
+  border-bottom: 1px solid #FFFFFF; }
 
 input, textarea {
-  border: 1px solid #DCDCDC; }
+  border: 1px solid #FFFFFF; }
   input:focus, textarea:focus {
     border: 0px solid; }
 
@@ -165,7 +167,7 @@ textarea {
     outline: 0; }
 
 textarea, select, input {
-  color: #DCDCDC;
+  color: #FFFFFF;
   padding: 6px 10px;
   margin-bottom: 10px;
   background-color: #f7f7f7;
