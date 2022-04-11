@@ -27,14 +27,334 @@
 <hr>
 
 <h3>Optimising Windows 10</h3>
+<h4>Preparatory Tasks</h4>
+<h5>Disabling UAC</h5>
+<ol>
+<li>Hit "Win + S" on your keyboard to open Search</li>
+<li>Type "UAC" and click "Change User Account Control settings"</li>
+<li>Slide the blue slider to "Never notify" and click "OK"</li>
+<li>Click "Yes"</li>
+</ol>
+<h5>Disabling Real-Time Protection</h5>
+<ol>
+<li>Start Menu > Windows Security > Virus & threat protection > "Manage settings" under "Virus & threat protection settings"</li>
+<li>Turn off "Real-time protection"</li>
+<li>Exit</li>
+</ol>
+<h5>Collecting Tools</h5>
+<ol>
+<li>On the desktop of the target system, create 3 folders named "configs", "tools" and "scripts"</li>
+<li>Right-click the following link, "Save link as", and save inside the "configs" folder</li>
+    <ul>
+    <li><a href="../../../../../assets/misc/ooshutup10.cfg">ooshutup10.cfg</a></li>
+    </ul>
+<li>Visit the following links and download the <b>portable</b> executable archives. Extract and save all inside the "tools" folder</li>
+    <ul>
+    <li><a href="https://github.com/builtbybel/privatezilla/releases">Privatezilla</a> | FOSS Privacy Settings Changer</li>
+    <li><a href="https://www.ccleaner.com/ccleaner/builds">CCleaner</a> | System Cleaner</li>
+    <li><a href="https://privazer.com/en/download.php">PrivaZer</a> | System Cleaner</li>
+    <li><a href="https://www.sordum.org/9480/defender-control-v2-1/">Defender Control</a> | Microsoft Defender Disabler</li>
+    <li><a href="https://www.oo-software.com/en/shutup10">ShutUp10++</a> | Privacy Settings Changer</li>
+    <li><a href="https://wpd.app/">WPD</a> | Privacy Settings Changer</li>
+    <li><a href="https://www.grc.com/inspectre.htm">InSpectre</a> | Meltdown & Spectre Patch Manager</li>
+    </ul>
+<li>Visit the following link and download the archive. Extract and place the folder in "tools" folder so that the file path is "tools/packages/[scripts]"</li>
+    <ul>
+    <li><a href="https://github.com/builtbybel/privatezilla/blob/master/scripts/packages.zip">packages.zip</a> | Accompanying Scripts for Privatezilla</li>
+    </ul>
+<li>Right-click the following link, "Save link as", and save inside the "scripts" folder</li>
+    <ul>
+    <li><a href="../../../../../assets/misc/privacy-script.bat">privacy-script.bat</a></li>
+</ol>
 
-    <footer>
-    <center>
+<h4>Managing Telemetry, Data Collection & Services</h4>
+<h5>privacy.sexy Script</h5>
+<ol>
+<li>In the "scripts" folder, right-click "privacy-script.bat", then click "Run as administrator"</li>
+<li>Restart once the script is complete</li>
+</ol>
+<h5>Defender Control</h5>
+<ol>
+<li>Open "dControl" from the "tools" folder</li>
+<li>Click "Disable Windows Defender"</li>
+<li>Manually disable Tamper protection if prompted</li>
+<li>Exit</li>
+</ol>
+<h5>ShutUp10</h5>
+<ol>
+<li>Open "OOSU10" from the "tools" folder</li>
+<li>File > Import settings... > select "ooshutup10.cfg" from the "configs" folder > click "OK"</li>
+<li>Exit > click "OK" > click "Close"</li>
+</ol>
+<h5>Privatezilla</h5>
+<ol>
+<li>Open "Privatezilla" from the "tools" folder</li>
+<li>Under the "Scripts" tab, check the following:</li>
+<ul>
+    <li>Block Telemetry IPs via Windows Firewall</li>
+    <li>Disable Services</li>
+    <li>Remove default apps (Provisioned)</li>
+    <li>Remove default apps (Recommended)</li>
+    <li>Remove OneDrive</li>
+    <li>Run Windows10 Debloater (Community)</li>
+</ul>
+<li>Click "Apply selected"</li>
+<li>Click "OK" 4 times</li>
+<li>If the script becomes stuck at "Waiting for explorer to complete loading", close the Powershell window manually, then click "OK"</li>
+<li>Click "Yes" 4 times, then "No" 3 times</li>
+<li>Click "OK"</li>
+<li>Under the "Settings" tab, check the following:</li>
+<ul>
+    <li>Privacy</li>
+    <li>Cortana</li>
+    <li>Remove all built-in apps</li>
+    <li>App permissions, then uncheck "Disable app notifications" and "Disable app access to camera, microphone, notifications, account info, documents, pictures, videos, file system"</li>
+    <li>Disable Windows update sharing</li>
+    <li>Gaming</li>
+    <li>Windows Defender</li>
+    <li>Microsoft Edge, then uncheck "Block Installation of New Microsoft Edge</li>
+    <li>Disable DRM in Windows Media Player</li>
+</ul>
+<li>Click "Apply selected"</li>
+<li>Exit</li>
+</ol>
+<h5>WPD</h5>
+<ol>
+<li>Open "WPD" from the "tools" folder</li>
+<li>Click "Telemetry"</li>
+<li>Turn off the following:</li>
+<ul>
+    <li>Everything under "Local group policy"</li>
+    <li>Everything under "Task Scheduler" except "Consolidator" and "Device Census"</li>
+    <li>Everything under the advanced "Local group policy" except "Allow Clipboard history" and "Let Windows apps access account information, the camera, the microphone, notifications"</li>
+    <li>App permissions, then uncheck "Disable app notifications" and "Disable app access to camera, microphone, notifications, account info, documents, pictures, videos, file system"</li>
+    <li>Everything under "Services" except "Windows Push Notifications User Services"</li>
+    <li>Everything under "Miscellaneous"</li>
+</ul>
+<li>Click the "Blocker" tab</li>
+<li>Click "Telemetry" under "Rule sets"</li>
+<li>Exit</li>
+</ol>
+<h5>PrivaZer</h5>
+<ol>
+<li>Open "PrivaZer" from the "tools" folder</li>
+<li>Click "Cancel"</li>
+<li>Click "Advanced Options"</li>
+<li>Click the "Memory" tab</li>
+<li>Click "Stop" under "Wsearch Indexing"</li>
+<li>Exit</li>
+</ol>
+<h5>CCleaner</h5>
+<ol>
+<li>Open "CCleaner64" from the "tools" folder</li>
+<li>Click "Tools", then "Startup"</li>
+<li>Click "SecurityHealth", then "Delete"</li>
+<li>Click "Scheduled Tasks", then "CCleanerSkipUAC - User", then "Delete", then "OK"</li>
+<li>Click "MicrosoftEdgeUpdateTaskMachineCore", then "Disable"</li>
+<li>Click "MicrosoftEdgeUpdateTaskMachineUA", then "Disable"</li>
+<li>Click "Windows Services", then check "Advanced Mode"</li>
+<li>Disable all except the following:</li>
+<ul>
+    <li>Background Tasks Infrastructure Service</li>
+    <li>Base Filtering Engine</li>
+    <li>Core Messaging</li>
+    <li>DCOM Server Process Launcher</li>
+    <li>DNS Client</li>
+    <li>Group Policy Client</li>
+    <li>Local Session Manager</li>
+    <li>Microsoft Office Click-to-Run Service (if present)</li>
+    <li>NVIDIA Display Container LS (if present)</li>
+    <li>Print Spooler</li>
+    <li>Remote Procedure Call (RPC)</li>
+    <li>RPC Endpoint Mapper</li>
+    <li>Security Center</li>
+    <li>Software Protection</li>
+    <li>System Events Broker</li>
+    <li>System Guard Runtime Monitor Broker</li>
+    <li>Task Scheduler</li>
+    <li>Windows Audio</li>
+    <li>Windows Audio Endpoint Builder</li>
+    <li>Windows Defender Firewall</li>
+    <li>WLAN AutoConfig</li>
+    <li>WpnUserService_2de2d</li>
+</ul>
+<li>Exit</li>
+</ol>
+<h5>InSpectre (on Intel Systems Only)</h5>
+<ol>
+<li>Right-click "InSpectre" from the "tools" folder and click "Run as administrator"</li>
+<li>Click "Disable Meltdown Protection" and "Disable Spectre Protection"</li>
+<li>Exit</li>
+</ol>
+
+<h4>Configuring Windows</h4>
+<ul>
+<li>Restart before beginning the following steps</li>
+</ul>
+<h5>Start Menu</h5>
+<ol>
+<li>Right-click and unpin all tiles</li>
+</ol>
+<h5>Taskbar</h5>
+<ol>
+<li>Right-click > Search > click "Show search icon"</li>
+<li>Right-click > uncheck "Show Task View button"</li>
+</ol>
+<h5>Explorer</h5>
+<ol>
+<li>Hit "Win + E" on your keyboard to open an explorer window</li>
+<li>File > click "Change folder and search options"</li>
+<li>Click "Quick Access" and change to "This PC"</li>
+<li>Uncheck "Show frequently used folders in Quick access"</li>
+</ol>
+<h5>Settings</h5>
+<ol>
+<li>Open the settings app</li>
+<li>Click "System" and change the following settings:</li>
+<ul>
+    <li>Sound > click "Sound Control Panel"</li>
+    <li>Right-click the default playback device > Properties > Enhancements > check "Disable all enhancements" > OK</li>
+    <li>Right-click the default recording device > Properties > Enhancements > check "Disable all enhancements" > OK</li>
+    <li>Communications > click "Do nothing"</li>
+    <li>Click "OK"</li>
+    <li>Notifications & actions > Edit your quick actions > unpin all toggles on the Action Center window > click "Done"</li>
+    <li>Uncheck "Show reminders and incoming VoIP calls on the lock screen" and "Allow notifications to play sounds"</li>
+    <li>Uncheck all apps under "Get notifications from these apps", except "Snip & Sketch"</li>
+    <li>Focus assist > uncheck all "Automatic rules"</li>
+    <li>Click "Priority only" > click "Customise your priority list" > uncheck all "Calls, texts and reminders" options > uncheck all "People" options</li>
+    <li>Click and remove all "Apps" except "Snip & Sketch"</li>
+    <li>Power & sleep > change "When plugged in, turn off after" and "When plugged in, PC goes to sleep after" to "5 minutes"</li>
+    <li>Storage > turn off "Storage Sense"</li>
+    <li>Tablet > change "When I sign in" to "Never use tablet mode"</li>
+    <li>Multi-tasking > change "Pressing Alt + Tab shows" to "Open windows only"</li>
+    <li>Shared experiences > turn off "Share across devices"</li>
+    <li>Clipboard > turn on "Clipboard history"</li>
+    <li>About > click "Advanced system settings" > click "Advanced"</li>
+    <li>Click "Settings", then select "Adjust for best performance"</li>
+    <li>Check the "Smooth edges of screen fonts" and "Show thumbnails instead of icons" options, then click "OK"</li>
+    <li>Click the arrow in the top left to return</li>
+</ul>
+<li>Click "Devices" and change the following settings:</li>
+<ul>
+    <li>Bluetooth & other devices > turn off "Bluetooth" if not in use</li>
+    <li>Uncheck "Show notifications to connect using Swift Pair"</li>
+    <li>Printers & scanners > click "Fax" and "Remove device"</li>
+    <li>Uncheck "Show reminders and incoming VoIP calls on the lock screen" and "Allow notifications to play sounds"</li>
+    <li>Uncheck all apps under "Get notifications from these apps", except "Snip & Sketch"</li>
+    <li>Typing > turn off "Autocorrect misspelt words"</li>
+    <li>AutoPlay > turn off "Use AutoPlay for all media and devices"</li>
+    <li>USB > uncheck "Notify me if there are issues connecting to USB devices"</li>
+    <li>Click the arrow in the top left to return</li>
+</ul>
+<li>Click "Network & Internet" and change the following settings:</li>
+<ul>
+    <li>WiFi > turn on "Use random hardware addresses"</li>
+    <li>Click the arrow in the top left to return</li>
+</ul>
+<li>Click "Personalisation" and change the following settings:</li>
+<ul>
+    <li>Colours > click "Choose your colour" > change to "Custom"</li>
+    <li>Change "Choose your default Windows mode" to "Light" and "Choose your default app mode" to "Dark"</li>
+    <li>Check "Automatically pick and accent colour from my background", "Start, taskbar and action centre" and "Title bar and window borders"</li>
+    <li>Start > turn off "Show recently added apps"</li>
+    <li>Click "Choose which folders appear on Start" and turn off all options</li>
+    <li>Taskbar > turn on "Use small taskbar buttons"</li>
+    <li>Turn off "Replace Command Prompt with Windows Powershell in the menu when I right-click the start button or press Windows logo key + X"</li>
+    <li>Turn off "Show taskbar on all displays"</li>
+    <li>Click "Turn system icons on or off" and turn off "Microphone", "Location" and "Input Indicator"</li>
+    <li>Click the arrow in the top left to return</li>
+    <li>Click "Select which icons appear on the taskbar" and turn off "Microphone"</li>
+    <li>Click the arrow in the top left to return</li>
+</ul>
+<li>Click "Apps" and change the following settings:</li>
+<ul>
+    <li>Apps & features > click "Optional features" > click and uninstall "Windows Hello Face", "Windows Media Player" and "WordPad"</li>
+    <li>Change "Choose your default Windows mode" to "Light" and "Choose your default app mode" to "Dark"</li>
+    <li>Click the arrow in the top left to return</li>
+</ul>
+<li>Click "Gaming" and change the following settings:</li>
+<ul>
+    <li>Xbox Game Bar > uncheck "Open Xbox Game Bar using this button on a controller."</li>
+</ul>
+<li>Click "Ease of Access" and change the following settings:</li>
+<ul>
+    <li>Mouse Pointer > click the far right option under "Change pointer colour", then "Pick a custom pointer colour", choose black then click "Done"</li>
+    <li>Uncheck "Show visual feedback around the touch points when I touch the screen"</li>
+    <li>Narrator > uncheck "Allow the shortcut key to start Narrator"</li>
+    <li>Keyboard > turn off "Allow the shortcut key to start Sticky Keys, Toggle Keys, Filter Keys"</li>
+    <li>Uncheck "Show a warning message when turning on Sticky Keys, Toggle Keys or Filter Keys from the keyboard"</li>
+    <li>Uncheck "Make a sound when turning Sticky Keys, Toggle Keys or Filter Keys on or off from the keyboard"</li>
+    <li>Click the arrow in the top left to return</li>
+</ul>
+<li>Click "Ease of Access" and change the following settings:</li>
+<ul>
+    <li>Mouse Pointer > click the far right option under "Change pointer colour", then "Pick a custom pointer colour", choose black then click "Done"</li>
+    <li>Uncheck "Show visual feedback around the touch points when I touch the screen"</li>
+    <li>Narrator > uncheck "Allow the shortcut key to start Narrator"</li>
+    <li>Keyboard > turn off "Allow the shortcut key to start Sticky Keys, Toggle Keys, Filter Keys"</li>
+    <li>Uncheck "Show a warning message when turning on Sticky Keys, Toggle Keys or Filter Keys from the keyboard"</li>
+    <li>Uncheck "Make a sound when turning Sticky Keys, Toggle Keys or Filter Keys on or off from the keyboard"</li>
+    <li>Click the arrow in the top left to return</li>
+</ul>
+<li>Click "Search" and change the following settings:</li>
+<ul>
+    <li>Permissions & History > change "SafeSearch to "Off"</li>
+    <li>Turn off "Search history on this device"</li>
+</ul>
+<li>Exit</li>
+</ol>
+<h5>Task Manager</h5>
+<ol>
+<li>Right-click the Taskbar > click "Task Manager"</li>
+<li>Click "More details"</li>
+<li>Processes > right-click "Name" > uncheck "Status", "Power usage", "Power usage trend" > check "GPU"</li>
+<li>Performance > click "GPU 0" > right-click the graph space > "Change graph to" > click "Single engine"</li>
+<li>App history > right-click "Name" > uncheck "Metered network" and "Tile updates"</li>
+<li>Startup > right-click "Name" > uncheck "Publisher" and "Start-up impact"</li>
+<li>Select any options present in the list, then "Disable"</li>
+<li>Users > right-click "Name" > uncheck "Status", "Power usage", "Power usage trend" > check "GPU"</li>
+<li>Exit</li>
+</ol>
+<h5>Control Panel</h5>
+<ol>
+<li>Hit "Win + S" on your keyboard to open Search</li>
+<li>Type "Control Panel" and click "Control Panel"</li>
+<li>Programs > click "Turn Windows Features on or off"</li>
+<li>Uncheck "Remote Differential Compression API Support" and click "OK"</li>
+<li>Click "Close"</li>
+</ol>
+<h5>System Configuration</h5>
+<ol>
+<li>Hit "Win + S" on your keyboard to open Search</li>
+<li>Type "msconfig" and click "System Configuration"</li>
+<li>Boot > check "No GUI boot" > click "OK" > click "Exit without restart"</li>
+</ol>
+<h5>Internet Properties</h5>
+<ol>
+<li>Hit "Win + S" on your keyboard to open Search</li>
+<li>Type "inetcpl.cpl" and click "OK"</li>
+<li>Security > click "Custom level..."</li>
+<li>Miscellaneous > change "Launching applications and unsafe files" to "Enabled (not secure)", then click "OK" and "Yes"</li>
+<li>Click "OK"</li>
+</ol>
+<h5>Notepad</h5>
+<ol>
+<li>Start Menu > Windows Accessories > click "Notepad"</li>
+<li>View > uncheck "Status Bar"</li>
+<li>Format > check "Word Wrap"</li>
+<li>Exit</li>
+</ol>
+
+<h4>Related Guides</h4>
+<h5><a href="./configuring-microsoft-edge.html">Configuring Microsoft Edge</h5>
+<h5><a href="./cleaning-up-windows-10.html">Cleaning-up Windows 10</h5>
+
+<footer>
     <hr>
     <a href="https://github.com/sysconf16/sysconf16.github.io/commits/main.atom">
-        <img src="../../../../../assets/imgs/rss.webp" alt="ATOM">
-    </a>
-    </center>
+        <img src="../../../../../assets/imgs/rss.webp" style="float:left"></a>
+        <a href="https://github.com/sysconf16/sysconf16.github.io">
+        <img src="../../../../../assets/imgs/github.webp" style="float:right"></a>
     </footer>
 
 </body>

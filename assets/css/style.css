@@ -34,15 +34,16 @@ h1 {
   font-size: 3em; }
 
 h2 {
-  font-size: 1.75em;
-    color: #008B8B;  }
+  font-size: 2em;
+    color: #8B0000;  }
 
 h3 {
   font-size: 1.5em;
-    color: #008B8B;  }
+    color: #8B0000;  }
 
 h4 {
-  font-size: 1.25em; }
+  font-size: 1.25em;
+  color: #008B8B; }
 
 h5 {
   font-size: 1em; }
@@ -66,7 +67,7 @@ small, sub, sup {
   font-size: 75%; }
 
 hr {
-  border-color: #8B0000; 
+  border-color: #008B8B; 
   border-radius: 5px;
   border-width: 3px; }
 
@@ -81,10 +82,15 @@ a {
 ul {
   padding-left: 1.4em;
   margin-top: 0px;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 0rem; }
+
+ol {
+  padding-left: 1.4em;
+  margin-top: 0px;
+  margin-bottom: 0rem; }
 
 li {
-  margin-bottom: 0.4em; }
+  margin-bottom: 0.3em; }
 
 blockquote {
   margin-left: 0px;
@@ -105,7 +111,7 @@ img, video {
   height: auto;
   max-width: 100%;
   margin-top: 0px;
-  margin-bottom: 0rem; }
+  margin-bottom: 0.5rem; }
 
 pre {
   background-color: #FFFFFF;
@@ -119,6 +125,8 @@ pre {
 code {
   font-size: 0.9em;
   padding: 0 0.5em;
+  color: #008B8B;
+  font-weight: bold;
   border-radius: 12px;
   background-color: #FFFFFF;
   white-space: pre-wrap; }

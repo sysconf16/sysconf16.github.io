@@ -1,0 +1,183 @@
+<html lang="en">
+    <head>
+    <link rel="stylesheet" href="../../../../../assets/css/style.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../../../../assets/imgs/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installing Windows 10 IoT Enterprise LTSC 2021</title>
+    </head>
+<body>
+    <header>
+    <center>
+    <h1>SYSCONF<upper>¹⁶</upper></h1>
+    </center>
+    </header>
+
+    <nav>
+    <center>
+    <b><a href="../../../../../index.html">Home</a></b>
+    <b>-</b>
+    <b><a href="../../../../../resources.html">Resources</a></b>
+    <b>-</b>
+    <b><a href="../../../../../software.html">Software</a></b>
+    <b>-</b>
+    <b><a href="../../../../../media.html">Media</a></b></b>
+    </center>
+    </nav>
+<hr>
+
+<h3>Installing Windows 10 IoT Enterprise LTSC 2021</h3>
+<h5>Prerequisites</h5>
+<ul>
+<li>Working computer with an internet connection</li>
+<li>Blank 8GB+ USB stick</li>
+<li>All existing data from the target computer backed up onto an external drive or cloud storage</li>
+</ul>
+
+<h4>Creating Installation Media</h4>
+<h5>Flashing the ISO Image</h5>
+<ol>
+<li>Using a working Windows computer, visit <a href="../../../../../software/desktop/lists/windows-10-enterprise-ltsc-2021.html">this</a> link to download the ISO image of the Windows setup that matches your region</li>
+<li>Download the portable Rufus application <a href="https://rufus.ie/">here</a></li>
+<li>Insert the USB stick into the computer and ensure that it is empty</li>
+<li>Run Rufus and select the USB stick under the "Device" drop-down</li>
+<li>Click the "SELECT" button and navigate to the downloaded ISO image</li>
+<li>Click "START" and wait for the process to complete</li>
+</ol>
+<h5>Collecting Installers & Tools</h5>
+<ol>
+<li>In the root of the USB drive, create a folder named "files"</li>
+<li>In "files" folder, create 3 further folders named "drivers", "installers" and "scripts"</li>
+<li>Visit the following links relevant to your hardware and download the executables. Save the files inside the "drivers" folder</li>
+    <ul>
+    <li><a href="https://www.techpowerup.com/download/techpowerup-nvcleanstall/">NVCleanstall</a> | for Nvidia GPUs</li>
+    <li><a href="https://www.amd.com/en/support">AMD Drivers and Support</a> | for AMD GPUs & Chipsets</li>
+    <li><a href="https://www.intel.com/content/www/us/en/download-center/home.html">Download Drivers & Software</a> | for Intel iGPUs & Chipsets</li>
+    </ul>
+<li>Visit the following links and download the executables. Save the files inside the "installers" folder</li>
+    <ul>
+    <li><a href="https://www.7-zip.org/">7-Zip</a> | FOSS Archiver</li>
+    <li><a href="https://github.com/sylikc/jpegview/releases">JPEGView</a> | FOSS Image Viewer</li>
+    <li><a href="https://github.com/clsid2/mpc-hc/releases">MPC-HC</a> | FOSS Media Player</li>
+    <li><a href="https://www.sumatrapdfreader.org/download-free-pdf-viewer">SumatraPDF</a> | FOSS PDF Viewer</li>
+    </ul>
+<li>Visit the following links and download the scripts. Save the files inside the "scripts" folder, then extract using 7-Zip</li>
+    <ul>
+    <li><a href="../../../../../software/desktop/lists/sysconf16-ltsc-2021-activator.html">SYSCONF16 LTSC 2021 Activator</a> | Converts Enterprise to IoT Enterprise & Activates via HWID</li>
+    <li><a href="../../../../../software/desktop/lists/sysconf16-ltsc-2021-snip-installer.html">SYSCONF16 LTSC 2021 Snip Installer</a> | Installs the Packages Required to Restore Clipboard History & Snip & Sketch</li>
+    <li><a href="../../../../../software/desktop/lists/sysconf16-ltsc-2021-jpegview-and-sumatrapdf-configurator.html">SYSCONF16 LTSC 2021 JPEGView and SumatraPDF Configurator</a> | Sets the Optimal Settings for JPEGView and SumatraPDF</li>
+    </ul>
+</ol>
+
+<h4>Installation</h4>
+<h5>Booting from USB</h5>
+<ol>
+<li>Turn off the target computer and insert the USB stick</li>
+<li>Push the power button while repeatedly pressing the boot menu key. A list for several manufacturers can be found <a href="./boot-menu-keys.html">here</a></li>
+<li>Select the UEFI option for your USB drive from the list</li>
+</ol>
+<h5>Installing to Disk</h5>
+<ol>
+<li>Continue through the wizard, then click "Custom: Install Windows only (advanced)"</li>
+<li>Select and delete all partitions on the desired boot drive so that only a single "Drive X Unallocated Space" is listed</li>
+<li>Select "Drive X Unallocated Space" and click "Next"</li>
+<li>Wait for the installation to complete</li>
+</ol>
+<h5>Out-of-Box-Experience (OOBE)</h5>
+<ol>
+<li>Disconnect your ethernet cable if using a wired connection</li>
+<li>Continue through the wizard, then click "I don't have internet" when prompted to create an internet connection and "Continue with limited setup"</li>
+<li>Click "No" for all privacy settings and choose "Send Required diagnostic data"</li>
+<li>At the desktop, re-connect your ethernet cable or connect to Wi-Fi</li>
+</ol>
+
+<h4>Core Functionality & Configuration</h4>
+<h5>Installing Hardware Drivers</h5>
+<ol>
+<li>Navigate to the "drivers" folder on the USB stick</li>
+<li>Install each driver package</li>
+<li>Restart after the final package has been installed</li>
+</ol>
+<h5>Activating Windows</h5>
+<ol>
+<li>Navigate to the "scripts" folder on the USB stick</li>
+<li>Run the SYSCONF16 LTSC 2021 Activator "runme.cmd"</li>
+<li>Click "More info" on the SmartScreen prompt, then "Run anyway"</li>
+<li>Click "Yes" on the UAC prompt</li>
+</ol>
+<h5>Restoring Clipboard History & Snip & Sketch</h5>
+<ol>
+<li>Navigate to the "scripts" folder on the USB stick</li>
+<li>Run the SYSCONF16 LTSC 2021 Snip Installer "runme.bat"</li>
+<li>Click "More info" on the SmartScreen prompt, then "Run anyway"</li>
+<li>Click "Yes" on the UAC prompt</li>
+</ol>
+<h5>Running Windows Update</h5>
+<ol>
+<li>Start Menu > Settings > Update & Security > Windows Update</li>
+<li>Check for and install all available updates</li>
+<li>Restart</li>
+</ol>
+<h5>Installing Basic Applications</h5>
+<ol>
+<li>Navigate to the "installers" folder on the USB stick</li>
+<li>Install each application</li>
+</ol>
+<h5>Configuring Basic Applications</h5>
+<ol>
+<li>For 7-Zip</li>
+    <ol>
+    <li>Start Menu > 7-Zip > right-click "7-Zip File Manager" > More > Run as administrator</li>
+    <li>Tools > System > Associate 7-Zip with: > click the "+" above "All users"</li>
+    <li>Click "CompressedFolder" next to "zip"</li>
+    <li>Click "CABFolder" next to "cab"</li>
+    <li>7-Zip > uncheck "Cascaded context menu"</li>
+    <li>Uncheck all "Context menu items:" except "Extract files", "Add to <Archive>.7z" and "Add to <Archive>.zip"</li>
+    <li>Click "Ok" and exit</li>
+    </ol>
+<li>For JPEGView & SumatraPDF:</li>
+    <ol>
+    <li>Navigate to the "scripts" folder on the USB stick</li>
+    <li>Run the SYSCONF16 LTSC 2021 JPEGView and SumatraPDF Configurator "runme.cmd"</li>
+    <li>Click "More info" on the SmartScreen prompt, then "Run anyway"</li>
+    <li>Click "Yes" on the UAC prompt</li>
+    </ol>
+<li>For MPC-HC</li>
+    <ol>
+    <li>Start Menu > MPC-HC x64 > right-click "MPC-HC x64" > More > Run as administrator</li>
+    <li>View > Uncheck "Status</li>
+    <li>View > Options</li>
+    <li>Under "Player", uncheck "Keep history of recently opened files" and "Remember last playlist"</li>   
+    <li>Under "Formats", click the green checkmark under "File extensions"</li>
+    <li>Uncheck "Use the format specific icons" and "File(s)" under "Explorer Context Icons"</li>
+    <li>Under "Advanced" change "EnableCrashReporter" to "False"</li>
+    <li>Exit</li>
+    </ol>
+<li>Setting Default Apps</li>
+    <ol>
+    <li>Start Menu > Settings > Apps > Default Apps</li>
+    <li>Click "Paint" under "Photo viewer", then click "JPEGView"</li>
+    <li>Click "Choose a default" under "Web browser", then click "Microsoft Edge"</li>
+    <li>Click "Choose default applications by file type", find ".pdf", click the item listed then click "SumatraPDF"</li>
+    <li>Exit</li>
+    <li>Start Menu > right-click "Microsoft Edge" > More > click "Pin to taskbar"</li>
+    <li>Start Menu > Windows System > right-click File Explorer > More > click "Pin to taskbar"</li>
+    </ol>
+</ol>
+
+<h4>Related Guides</h4>
+<h5><a href="./optimising-windows-10.html">Optimising Windows 10</a></h5>
+<h5><a href="./configuring-microsoft-edge.html">Configuring Microsoft Edge</h5>
+<h5><a href="./installing-the-microsoft-store-xbox-app-on-ltsc.html">Installing the Microsoft Store & Xbox App on LTSC (optional)</h5>
+<h5><a href="./cleaning-up-windows-10.html">Cleaning-up Windows 10</h5>
+
+<footer>
+    <hr>
+    <a href="https://github.com/sysconf16/sysconf16.github.io/commits/main.atom">
+        <img src="../../../../../assets/imgs/rss.webp" style="float:left"></a>
+        <a href="https://github.com/sysconf16/sysconf16.github.io">
+        <img src="../../../../../assets/imgs/github.webp" style="float:right"></a>
+    </footer>
+
+</body>
+</html>
