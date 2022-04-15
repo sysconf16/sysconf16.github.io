@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+    <link rel="stylesheet" href="../../../../../assets/css/style.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../../../../assets/imgs/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updating & Configuring the BIOS</title>
+    </head>
+<body>
+    <header>
+    <center>
+    <h1>SYSCONF<upper>¹⁶</upper></h1>
+    </center>
+    </header>
+
+    <nav>
+        <center>
+        <b><a href="../../../../../index.html">Home</a></b>
+        <b>-</b>
+        <b><a href="../../../../../resources.html">Resources</a></b>
+        <b>-</b>
+        <b><a href="../../../../../software.html">Software</a></b>
+        <b>-</b>
+        <b><a href="../../../../../media-services.html">Media & Services</a></b></b>
+        </center>
+        </nav>
+<hr>
+
+<h3>Updating & Configuring the BIOS</h3>
+<h4>Update</h4>
+<ol>
+<li>Download the latest BIOS revision for your motherboard from the manufacturer's website</li>
+<li>Format a USB stick with the FAT32 file system</li>
+<li>Extract the BIOS image from the downloaded archive</li>
+<li>Copy the BIOS image to the root of the USB stick (if the drive letter is "D", then D:\, i.e. not in a folder)</li>
+<li>Insert the USB stick into one of the rear USB 2.0 ports on the motherboard</li>
+<li>Press the power button and enter the BIOS by repeatedly pressing the BIOS key. See <a href="../../../../../resources/technology/guides/software/lists/bios-keys.html">here</a> for a list of BIOS keys</li>
+<li>Enter the BIOS flash/update utility for your motherboard</li>
+<li>Select the file from the USB stick and wait for the BIOS to update</li>
+<li>The system may power cycle multiple times and this is normal</li>
+</ol>
+<h4>Configuration</h4>
+<ol>
+<li>Press the power button and enter the BIOS by repeatedly pressing the BIOS key. See <a href="../../../../../resources/technology/guides/software/lists/bios-keys.html">here</a> for a list of BIOS keys</li>
+<li>Find and enable the "XMP" profile for your memory</li>
+<li>Find and enable "UEFI Boot" and disable "Legacy Boot"</li>
+<li>Find and enable "PXE/network/LAN boot"</li>
+<li>Find and enable "Resizable Bar"</li>
+<li>Find and enable "4G Decoding"</li>
+<li>If there's an option to specify OS type (e.g., on some MSI and ASUS motherboards), select "Windows 10 WHQL"</li>
+<li>Disable "CSM Compatibility"</li>
+<li>Disable virtualisation, unless you'll be running virtual machines, by disabling "Intel Virtualisation Tech (VT-x)" for Intel and "SVM" for AMD</li>
+</ol>
+
+<h4>Related Guides</h4>
+<h5><a href="./installing-windows-10-iot-enterprise-ltsc-2021.html">Installing Windows 10 IoT Enterprise LTSC 2021</a></h5>
+
+<footer>
+    <hr>
+    <a href="https://github.com/sysconf16/sysconf16.github.io/commits/main.atom">
+        <img src="../../../../../assets/imgs/rss.webp" style="float:left"></a>
+        <a href="https://github.com/sysconf16/sysconf16.github.io">
+        <img src="../../../../../assets/imgs/github.webp" style="float:right"></a>
+    </footer>
+
+</body>
+</html>

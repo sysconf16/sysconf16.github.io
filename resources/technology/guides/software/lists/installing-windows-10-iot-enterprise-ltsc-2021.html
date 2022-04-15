@@ -14,20 +14,20 @@
     </header>
 
     <nav>
-    <center>
-    <b><a href="../../../../../index.html">Home</a></b>
-    <b>-</b>
-    <b><a href="../../../../../resources.html">Resources</a></b>
-    <b>-</b>
-    <b><a href="../../../../../software.html">Software</a></b>
-    <b>-</b>
-    <b><a href="../../../../../media.html">Media</a></b></b>
-    </center>
-    </nav>
+        <center>
+        <b><a href="../../../../../index.html">Home</a></b>
+        <b>-</b>
+        <b><a href="../../../../../resources.html">Resources</a></b>
+        <b>-</b>
+        <b><a href="../../../../../software.html">Software</a></b>
+        <b>-</b>
+        <b><a href="../../../../../media-services.html">Media & Services</a></b></b>
+        </center>
+        </nav>
 <hr>
 
 <h3>Installing Windows 10 IoT Enterprise LTSC 2021</h3>
-<h5>Prerequisites</h5>
+<h4>Prerequisites</h4>
 <ul>
 <li>Working computer with an internet connection</li>
 <li>Blank 8GB+ USB stick</li>
@@ -37,7 +37,7 @@
 <h4>Creating Installation Media</h4>
 <h5>Flashing the ISO Image</h5>
 <ol>
-<li>Using a working Windows computer, visit <a href="../../../../../software/desktop/lists/windows-10-enterprise-ltsc-2021.html">this</a> link to download the x64-based ISO image of the Windows setup that matches your region</li>
+<li>Using a working Windows computer, visit <a href="../../../../../software/desktop-tools-scripts/lists/windows-10-enterprise-ltsc-2021.html">this</a> link to download the 64-bit ISO image of the Windows setup that matches your region (e.g., <code>en-gb_windows_10_enterprise_ltsc_2021_x64_dvd_7fe51fe8.iso</code></li>
 <li>Download the portable Rufus application <a href="https://rufus.ie/">here</a></li>
 <li>Insert the USB stick into the computer and ensure that it is empty</li>
 <li>Run Rufus and choose the USB stick</li>
@@ -47,25 +47,17 @@
 <h5>Collecting Installers & Tools</h5>
 <ol>
 <li>In the root of the USB drive, create a folder named "files"</li>
-<li>In "files" folder, create 3 further folders named "drivers", "installers" and "scripts"</li>
+<li>In "files" folder, create 2 further folders named "drivers" and "scripts"</li>
 <li>Visit the following links relevant to your hardware and download the executables. Save the files inside the "drivers" folder</li>
     <ul>
     <li><a href="https://www.techpowerup.com/download/techpowerup-nvcleanstall/">NVCleanstall</a> | for Nvidia GPUs</li>
     <li><a href="https://www.amd.com/en/support">AMD Drivers and Support</a> | for AMD GPUs & Chipsets</li>
     <li><a href="https://www.intel.com/content/www/us/en/download-center/home.html">Download Drivers & Software</a> | for Intel iGPUs & Chipsets</li>
     </ul>
-<li>Visit the following links and download the executables. Save the files inside the "installers" folder</li>
+<li>Visit the following links then download and extract the scripts to the "scripts" folder</li>
     <ul>
-    <li><a href="https://www.7-zip.org/">7-Zip</a> | FOSS Archiver</li>
-    <li><a href="https://github.com/sylikc/jpegview/releases">JPEGView</a> | FOSS Image Viewer</li>
-    <li><a href="https://github.com/clsid2/mpc-hc/releases">MPC-HC</a> | FOSS Media Player</li>
-    <li><a href="https://www.sumatrapdfreader.org/download-free-pdf-viewer">SumatraPDF</a> | FOSS PDF Viewer</li>
-    </ul>
-<li>Visit the following links and download the scripts. Save the files inside the "scripts" folder, then extract using 7-Zip</li>
-    <ul>
-    <li><a href="../../../../../software/desktop/lists/sysconf16-ltsc-2021-activator.html">SYSCONF16 LTSC 2021 Activator</a> | Converts Enterprise to IoT Enterprise & Activates via HWID</li>
-    <li><a href="../../../../../software/desktop/lists/sysconf16-ltsc-2021-snip-installer.html">SYSCONF16 LTSC 2021 Snip Installer</a> | Installs the Packages Required to Restore Clipboard History & Snip & Sketch</li>
-    <li><a href="../../../../../software/desktop/lists/sysconf16-ltsc-2021-jpegview-and-sumatrapdf-configurator.html">SYSCONF16 LTSC 2021 JPEGView and SumatraPDF Configurator</a> | Sets the Optimal Settings for JPEGView and SumatraPDF</li>
+    <li><a href="../../../../../software/desktop-tools-scripts/lists/sysconf16-ltsc-2021-activator.html">SYSCONF16 LTSC 2021 Activator</a> | Converts Enterprise to IoT Enterprise & Activates via HWID</li>
+    <li><a href="../../../../../software/desktop-tools-scripts/lists/sysconf16-ltsc-2021-snip-installer.html">SYSCONF16 LTSC 2021 Snip Installer</a> | Installs the Packages Required to Restore Clipboard History & Snip & Sketch</li>
     </ul>
 </ol>
 
@@ -120,64 +112,10 @@
 <li>Check for and install all available updates</li>
 <li>Restart</li>
 </ol>
-<h5>Installing Basic Applications</h5>
-<ol>
-<li>Navigate to the "installers" folder on the USB stick</li>
-<li>Install each application</li>
-</ol>
-<h5>Configuring Basic Applications</h5>
-<ol>
-<li>For 7-Zip</li>
-    <ol>
-    <li>Start Menu > 7-Zip > right-click "7-Zip File Manager" > More > Run as administrator</li>
-    <li>Tools > System > Associate 7-Zip with: > click the "+" above "All users"</li>
-    <li>Click "CompressedFolder" next to "zip"</li>
-    <li>Click "CABFolder" next to "cab"</li>
-    <li>7-Zip > uncheck "Cascaded context menu"</li>
-    <li>Uncheck all "Context menu items:" except "Extract files", "Add to <Archive>.7z" and "Add to <Archive>.zip"</li>
-    <li>Click "OK" and exit</li>
-    </ol>
-<li>For JPEGView & SumatraPDF:</li>
-    <ol>
-    <li>Navigate to the "scripts" folder on the USB stick</li>
-    <li>Copy the "SYSCONF16 LTSC 2021 JPEGView and SumatraPDF Configurator" folder to the desktop</li>
-    <li>Run the SYSCONF16 LTSC 2021 JPEGView and SumatraPDF Configurator "runme.cmd"</li>
-    <li>Click "More info" on the SmartScreen prompt, then "Run anyway"</li>
-    <li>Click "Yes" on the UAC prompt</li>
-    </ol>
-<li>For MPC-HC</li>
-    <ol>
-    <li>Start Menu > MPC-HC x64 > right-click "MPC-HC x64" > More > Run as administrator</li>
-    <li>View > Uncheck "Status</li>
-    <li>View > Options</li>
-    <li>Under "Player", uncheck "Keep history of recently opened files" and "Remember last playlist"</li>   
-    <li>Under "Formats", click the green checkmark under "File extensions"</li>
-    <li>Uncheck "Use the format specific icons" and "File(s)" under "Explorer Context Icons"</li>
-    <li>Under "Advanced" change "EnableCrashReporter" to "False"</li>
-    <li>Exit</li>
-    </ol>
-<li>Setting Default Apps (for applications that do not show as options, try opening a file using it)</li>
-    <ol>
-    <li>Start Menu > SumatraPDF > click the handburger menu in the top left > Settings > click "Options"</li>
-    <li>Click "Make SumatraPDF the default PDF viewer" and exit</li>
-    <li>Start Menu > JPEGView > click "Cancel" and right-click the black space > Settings/Admin > click "Set as the default viewer"</li>
-    <li>Exit</li>
-    <li>Start Menu > Settings > Apps > Default Apps</li>
-    <li>Click "Paint" under "Photo viewer", then click "JPEGView"</li>
-    <li>Click "Choose a default" under "Web browser", then click "Microsoft Edge"</li>
-    <li>Click "Choose a default" under "Music player", then click "MPC-HC x64"</li>
-    <li>Click "Choose a default" under "Video player", then click "MPC-HC x64"</li>
-    <li>Click "Choose default applications by file type", find ".pdf", click the item listed then click "SumatraPDF"</li>
-    <li>Exit</li>
-    <li>Start Menu > right-click "Microsoft Edge" > More > click "Pin to taskbar"</li>
-    <li>Start Menu > Windows System > right-click File Explorer > More > click "Pin to taskbar"</li>
-    </ol>
-</ol>
 
 <h4>Related Guides</h4>
 <h5><a href="./optimising-windows-10.html">Optimising Windows 10</a></h5>
 <h5><a href="./configuring-microsoft-edge.html">Configuring Microsoft Edge</h5>
-<h5><a href="./configuring-nextdns.html">Configuring NextDNS (optional)</h5>
 <h5><a href="./installing-the-microsoft-store-xbox-app-on-ltsc.html">Installing the Microsoft Store & Xbox App on LTSC (optional)</h5>
 <h5><a href="./disabling-enhanced-pointer-precision.html">Disabling Enhanced Pointer Precision (optional)</h5>
 <h5><a href="./cleaning-up-windows-10.html">Cleaning-up Windows 10</h5>

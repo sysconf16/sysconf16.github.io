@@ -14,16 +14,16 @@
     </header>
 
     <nav>
-    <center>
-    <b><a href="../../../../../index.html">Home</a></b>
-    <b>-</b>
-    <b><a href="../../../../../resources.html">Resources</a></b>
-    <b>-</b>
-    <b><a href="../../../../../software.html">Software</a></b>
-    <b>-</b>
-    <b><a href="../../../../../media.html">Media</a></b></b>
-    </center>
-    </nav>
+        <center>
+        <b><a href="../../../../../index.html">Home</a></b>
+        <b>-</b>
+        <b><a href="../../../../../resources.html">Resources</a></b>
+        <b>-</b>
+        <b><a href="../../../../../software.html">Software</a></b>
+        <b>-</b>
+        <b><a href="../../../../../media-services.html">Media & Services</a></b></b>
+        </center>
+        </nav>
 <hr>
 
 <h3>Optimising Windows 10</h3>
@@ -43,10 +43,10 @@
 </ol>
 <h5>Collecting Tools</h5>
 <ol>
-<li>On the desktop of the target system, create 3 folders named "configs", "tools" and "scripts"</li>
+<li>On the desktop of the target system, create 4 folders named "configs", "tools", "scripts" and "installers"</li>
 <li>Right-click the following link, "Save link as", and save inside the "configs" folder</li>
     <ul>
-    <li><a href="../../../../../assets/misc/ooshutup10.cfg">ooshutup10.cfg</a></li>
+    <li><a href="../../../../../assets/files/ooshutup10.cfg">ooshutup10.cfg</a></li>
     </ul>
 <li>Visit the following links and download the <b>portable</b> executable archives. Extract and save all inside the "tools" folder</li>
     <ul>
@@ -58,13 +58,25 @@
     <li><a href="https://wpd.app/">WPD</a> | Privacy Settings Changer</li>
     <li><a href="https://www.grc.com/inspectre.htm">InSpectre</a> | Meltdown & Spectre Patch Manager</li>
     </ul>
+<li>Visit the following links and download the executables. Save the files inside the "installers" folder</li>
+    <ul>
+    <li><a href="https://www.7-zip.org/">7-Zip</a> | FOSS Archiver</li>
+    <li><a href="https://github.com/sylikc/jpegview/releases">JPEGView</a> | FOSS Image Viewer</li>
+    <li><a href="https://github.com/clsid2/mpc-hc/releases">MPC-HC</a> | FOSS Media Player</li>
+    <li><a href="https://www.sumatrapdfreader.org/download-free-pdf-viewer">SumatraPDF</a> | FOSS PDF Viewer</li>
+    </ul>
 <li>Visit the following link and download the archive. Extract and place the "scripts" folder in the same location as "Privatezilla.exe"</li>
     <ul>
     <li><a href="https://github.com/builtbybel/privatezilla/blob/master/scripts/packages.zip">packages.zip</a> | Accompanying Scripts for Privatezilla</li>
     </ul>
 <li>Right-click the following link, "Save link as", and save inside the "scripts" folder</li>
     <ul>
-    <li><a href="../../../../../assets/misc/privacy-script.bat">privacy-script.bat</a></li>
+    <li><a href="../../../../../assets/files/privacy-script.bat">privacy-script.bat</a></li>
+    </ul>
+<li>Visit the following link then download and extract the script to the "scripts" folder</li>
+    <ul>
+    <li><a href="../../../../../software/desktop-tools-scripts/lists/sysconf16-jpegview-and-sumatrapdf-configurator.html">SYSCONF16 JPEGView and SumatraPDF Configurator</a> | Sets the Optimal Settings for JPEGView and SumatraPDF</li>
+    </ul>
 </ol>
 
 <h4>Managing Telemetry, Data Collection & Services</h4>
@@ -126,7 +138,7 @@
 <ul>
     <li>Everything under "Local group policy"</li>
     <li>Everything under "Task Scheduler" except "Consolidator" and "Device Census"</li>
-    <li>Everything under the advanced "Local group policy" except "Allow Clipboard history" and "Let Windows apps access account information, the camera, the microphone, notifications"</li>
+    <li>Everything under the advanced "Local group policy" except "Allow Clipboard History", "Use OneDrive for file storage" and "Let Windows apps access account information, the camera, the microphone, notifications"</li>
     <li>Everything under "Services" except "Windows Push Notifications User Services"</li>
     <li>Everything under "Miscellaneous"</li>
 </ul>
@@ -175,7 +187,7 @@
     <li>Windows Audio Endpoint Builder</li>
     <li>Windows Defender Firewall</li>
     <li>WLAN AutoConfig</li>
-    <li>WpnUserService_2de2d</li>
+    <li>WpnUserService</li>
 </ul>
 <li>Exit</li>
 </ol>
@@ -198,6 +210,8 @@
 <ol>
 <li>Right-click > Search > click "Show search icon"</li>
 <li>Right-click > uncheck "Show Task View button"</li>
+<li>Start Menu > right-click "Microsoft Edge" > More > click "Pin to taskbar"</li>
+<li>Start Menu > Windows System > right-click File Explorer > More > click "Pin to taskbar"</li>
 </ol>
 <h5>Explorer</h5>
 <ol>
@@ -250,7 +264,7 @@
 </ul>
 <li>Click "Personalisation" and change the following settings:</li>
 <ul>
-    <li>Colours > click "Choose your colour" > change to "Light"</li>
+    <li>Colours > click "Choose your colour" > change to "Light" or "Dark" depending on preference</li>
     <li>Turn off "Transparency effects"</li>
     <li>Start > turn off "Show recently added apps"</li>
     <li>Click "Choose which folders appear on Start" and turn off all options</li>
@@ -327,6 +341,55 @@
 <li>Start Menu > Windows Accessories > click "Notepad"</li>
 <li>View > uncheck "Status Bar"</li>
 <li>Format > check "Word Wrap"</li>
+<li>Exit</li>
+</ol>
+<h5>Installing Basic Applications</h5>
+<ol>
+<li>Navigate to the "installers" folder on the desktop</li>
+<li>Install each application</li>
+</ol>
+<h5>Configuring Basic Applications</h5>
+<ol>
+<li>For 7-Zip</li>
+    <ol>
+    <li>Start Menu > 7-Zip > right-click "7-Zip File Manager" > More > Run as administrator</li>
+    <li>Tools > System > Associate 7-Zip with: > click the "+" above "All users"</li>
+    <li>Click "CompressedFolder" next to "zip"</li>
+    <li>Click "CABFolder" next to "cab"</li>
+    <li>7-Zip > uncheck "Cascaded context menu"</li>
+    <li>Uncheck all "Context menu items:" except "Extract files", "Add to <Archive>.7z" and "Add to <Archive>.zip"</li>
+    <li>Click "OK" and exit</li>
+    </ol>
+<li>For JPEGView & SumatraPDF:</li>
+    <ol>
+    <li>Navigate to the "scripts" folder on the desktop</li>
+    <li>Run the SYSCONF16 JPEGView and SumatraPDF Configurator "runme.cmd"</li>
+    <li>Exit</li>
+    </ol>
+<li>For MPC-HC</li>
+    <ol>
+    <li>Start Menu > MPC-HC x64 > right-click "MPC-HC x64" > More > Run as administrator</li>
+    <li>View > Uncheck "Status</li>
+    <li>View > Options</li>
+    <li>Under "Player", uncheck "Keep history of recently opened files" and "Remember last playlist"</li>   
+    <li>Under "Formats", click the green checkmark under "File extensions"</li>
+    <li>Uncheck "Use the format specific icons" and "File(s)" under "Explorer Context Icons"</li>
+    <li>Under "Advanced" change "EnableCrashReporter" to "False"</li>
+    <li>Exit</li>
+    </ol>
+</ol>
+<h5>Setting Default Apps</h5>
+<ol>
+<li>Start Menu > SumatraPDF > click the handburger menu in the top left > Settings > click "Options"</li>
+<li>Click "Make SumatraPDF the default PDF viewer" and exit</li>
+<li>Start Menu > JPEGView > click "Cancel" and right-click the black space > Settings/Admin > click "Set as the default viewer"</li>
+<li>Exit</li>
+<li>Start Menu > Settings > Apps > Default Apps</li>
+<li>Click "Paint" under "Photo viewer", then click "JPEGView"</li>
+<li>Click "Choose a default" under "Web browser", then click "Microsoft Edge"</li>
+<li>Click "Choose a default" under "Music player", then click "MPC-HC x64"</li>
+<li>Click "Choose a default" under "Video player", then click "MPC-HC x64"</li>
+<li>Click "Choose default applications by file type", find ".pdf", click the item listed then click "SumatraPDF"</li>
 <li>Exit</li>
 </ol>
 
