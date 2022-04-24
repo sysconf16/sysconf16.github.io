@@ -1,5 +1,5 @@
 # SYSCONF¹⁶
-## "The Definitive Catalogue"
+#### "The Definitive Catalogue"
 
 ### About
 - A curated selection of software, services and handwritten guides and recommendations that will help you to get the most out of your technology
