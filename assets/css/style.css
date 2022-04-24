@@ -107,8 +107,8 @@ blockquote p {
   margin-bottom: 0; }
 
 img, video {
-  height: auto;
   max-width: 100%;
+  max-height: 375px;
   margin-top: 0px;
   border-radius: 12px;
   margin-bottom: 0.5rem; }
