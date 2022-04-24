@@ -57,6 +57,8 @@ p {
 
 upper {
   color: #008B8B;
+  vertical-align: super;
+  font-size: 35px;
   animation: blink 3.5s linear infinite;
   }
   @keyframes blink {  
