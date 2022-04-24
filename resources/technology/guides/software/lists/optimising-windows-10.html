@@ -133,15 +133,17 @@
 <h5>WPD</h5>
 <ol>
 <li>Open "WPD" from the "tools" folder</li>
-<li>Click "Telemetry"</li>
+<li>Click "Privacy"</li>
 <li>Turn off the following:</li>
 <ul>
     <li>Everything under "Local group policy"</li>
+    <li>Everything under "Services"</li>
     <li>Everything under "Task Scheduler" except "Consolidator" and "Device Census"</li>
-    <li>Everything under the advanced "Local group policy" except "Allow Clipboard History", "Use OneDrive for file storage" and "Let Windows apps access account information, the camera, the microphone, notifications"</li>
-    <li>Everything under "Services" except "Windows Push Notifications User Services"</li>
+    <li>Everything under advanced "Local group policy" except "Allow Clipboard History", "Use OneDrive for file storage" and "Let Windows apps access account information, the camera, the microphone, notifications"</li>
+    <li>Everything under advanced "Services" except "Windows Push Notifications User Services"</li>
     <li>Everything under "Miscellaneous"</li>
 </ul>
+<li>Leave "Windows Update" enabled</li>
 <li>Click the "Blocker" tab</li>
 <li>Click "Telemetry" under "Rule sets"</li>
 <li>Exit</li>
@@ -166,6 +168,7 @@
 <li>Click "Windows Services", then check "Advanced Mode"</li>
 <li>Disable all except the following:</li>
 <ul>
+    <li>Apple Mobile Device Service (if present)</li>
     <li>Background Tasks Infrastructure Service</li>
     <li>Base Filtering Engine</li>
     <li>Core Messaging</li>
@@ -187,7 +190,7 @@
     <li>Windows Audio Endpoint Builder</li>
     <li>Windows Defender Firewall</li>
     <li>WLAN AutoConfig</li>
-    <li>WpnUserService</li>
+    <li>WpnUserService (if present)</li>
 </ul>
 <li>Exit</li>
 </ol>
@@ -230,6 +233,7 @@
     <li>Right-click the default recording device > Properties > Enhancements > check "Disable all enhancements" > OK</li>
     <li>Communications > click "Do nothing"</li>
     <li>Click "OK"</li>
+    <li>Hit "Win + Shift + S" on your keyboard to open Snip & Sketch, then hit the ESC key</li>
     <li>Notifications & actions > Edit your quick actions > unpin all toggles on the Action Center window > click "Done"</li>
     <li>Uncheck "Show reminders and incoming VoIP calls on the lock screen" and "Allow notifications to play sounds"</li>
     <li>Uncheck all apps under "Get notifications from these apps", except "Snip & Sketch"</li>
