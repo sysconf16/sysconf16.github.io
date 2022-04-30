@@ -29,22 +29,16 @@
 <h3>Using BlockTheSpot</h3>
 <h4>Preparatory Tasks</h4>
 <ol>
-<li>Uninstall any installations of Spotify present on the target system</li>
 <li>Download and install Spotify from the following link</li>
     <ul>
     <li><a href="https://www.spotify.com/uk/download/windows/">Spotify</a> | Win32 Spotify Installer</li>
-    </ul>
-<li>Download the following script to your downloads folder</li>
-    <ul>
-    <li><a href="https://raw.githack.com/mrpond/BlockTheSpot/master/BlockTheSpot.bat">BlockTheSpot.bat</a> | Windows Spotify Client Ad-Blocker</li>
     </ul>
 </ol>
 
 <h4>Installation</h4>
 <ol>
-<li>Navigate to your downloads folder and right-click "BlockTheSpot.bat", then click "Run as administrator"</li>
-<li>At the "Uninstall Spotify Windows Store edition if it exists" prompt, type "n" then hit the enter key</li>
-<li>At the "Remove ad placeholder and upgrade button" prompt, type "y" then hit the enter key</li>
+<li>Start Menu > Windows PowerShell > click "Windows PowerShell" </li>
+<li>Copy and paste <code>[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-Expression "& { $(Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/mrpond/BlockTheSpot/master/install.ps1') } -UninstallSpotifyStoreEdition -RemoveAdPlaceholder"</code> into the PowerShell window, then hit the enter key</li>
 <li>Wait for completion then exit</li>
 </ol>
 
