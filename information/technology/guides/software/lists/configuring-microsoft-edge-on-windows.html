@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="../../../../../assets/css/style.css">
+      <meta charset="UTF-8">
+      <link rel="icon" href="../../../../../assets/imgs/favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Configuring Microsoft Edge on Windows</title>
+   </head>
+   <body>
+      <header>
+         <center>
+            <h1>SYSCONF<upper>16</upper></h1>
+         </center>
+      </header>
+      <nav>
+         <center>
+            <b><a href="../../../../../index.html">Home</a></b>
+            <b>-</b>
+            <b><a href="../../../../../information.html">Information</a></b>
+            <b>-</b>
+            <b><a href="../../../../../software.html">Software</a></b>
+            <b>-</b>
+            <b><a href="../../../../../media-resources.html">Media & Resources</a></b></b>
+         </center>
+      </nav>
+      <hr>
+      <h3>Configuring Microsoft Edge on Windows</h3>
+      <h4>Preparatory Tasks</h4>
+      <h5>Collecting Configs</h5>
+      <ol>
+         <li>Right-click the following links, "Save link as", and save on the desktop</li>
+         <ul>
+            <li><a href="https://raw.githubusercontent.com/sysconf16/configs-and-scripts/main/uBlock%20Origin/my-ublock-backup.txt">my-ublock-backup.txt</a></li>
+            <li><a href="https://raw.githubusercontent.com/sysconf16/configs-and-scripts/main/SponsorBlock/SponsorBlockConfig.json">SponsorBlockConfig.json</a></li>
+         </ul>
+      </ol>
+      <h5>Running the Configurator</h5>
+      <ol>
+         <li>Visit following link on the target system and download the script. Extract to the desktop using 7-Zip</li>
+         <ul>
+            <li><a href="https://github.com/sysconf16/edge-configurator/archive/refs/heads/main.zip">Edge Configurator</a> | Sets the Optimal Settings for Microsoft Edge on Windows</li>
+         </ul>
+         <li>Run "runme.cmd"</li>
+      </ol>
+      <h5>First Launch</h5>
+      <ol>
+         <li>Start Menu > click "Microsoft Edge"</li>
+         <li>Click "Start without your data"</li>
+         <li>Click "Don't allow", then "Confirm and continue"</li>
+         <li>Click "Next", then "Finish"</li>
+         <li>Click "Reject All"</li>
+         <li>Close all tabs except the New Tab Page</li>
+         <li>Hit "Alt + F" on your keyboard, then click "Settings"</li>
+      </ol>
+      <h4>Settings</h4>
+      <h5>Privacy, search and services</h5>
+      <ol>
+         <li>Security > turn off "Microsoft Defender SmartScreen"</li>
+         <li>Turn off "Turn on site safety services to get more info about the sites you visit"</li>
+         <li>Services > click "Address bar and search"</li>
+         <li>Click "Manage search engines"</li>
+         <li>Click the 3 dots next to "Google" and click "Make default"</li>
+      </ol>
+      <h5>Flags</h5>
+      <ol>
+         <li>Type <code>edge://flags</code> into the address bar</li>
+         <li>Type "Hardware Media Key Handling" into the Search box</li>
+         <li>Change "Default" to "Disabled" and click "Restart"</li>
+      </ol>
+      <h4>Extensions</h4>
+      <ol>
+         <li>Visit the following links and click "Add to Chrome", then "Add extension"</li>
+         <ul>
+            <li><a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin</a> | Wide-Spectrum Blocker</li>
+            <li><a href="https://chrome.google.com/webstore/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone">SponsorBlock</a> | YouTube Sponsorship Segment Skipper</li>
+         </ul>
+         <li>Right-click the uBlock Origin icon > click "Extension options"</li>
+         <li>Click "Restore from file", navigate to and select "my-ublock-backup.txt", click "Allow" if prompted then click "OK"</li>
+         <li>Re-open Microsoft Edge, right-click the uBlock Origin icon > click "Extension options"</li>
+         <li>Filter lists > click "Update now"</li>
+         <li>Right-click the SponsorBlock icon > click "Extension options"</li>
+         <li>Backup/Restore > click "Load from file", navigate to and select "SponsorBlockConfig.json", click "Allow" if prompted then click "OK"</li>
+         <li>Exit</li>
+      </ol>
+      <br>
+      <h4>Related Guides</h4>
+      <h5><a href="./optimising-windows-10.html">Optimising Windows 10</a></h5>
+      <h5><a href="./cleaning-up-windows-10.html">Cleaning-up Windows 10</a></h5>
+      <hr>
+      <footer>
+      <a href="https://github.com/sysconf16/sysconf16.github.io">
+      <img src="../../../../../assets/imgs/github.webp" style="float:right" height="16"></a>
+      </footer>
+   </body>
+</html>

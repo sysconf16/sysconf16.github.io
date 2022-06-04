@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="../../../../../assets/css/style.css">
+      <meta charset="UTF-8">
+      <link rel="icon" href="../../../../../assets/imgs/favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Configuring NextDNS for iOS, iPadOS & macOS</title>
+   </head>
+   <body>
+      <header>
+         <center>
+            <h1>SYSCONF<upper>16</upper></h1>
+         </center>
+      </header>
+      <nav>
+         <center>
+            <b><a href="../../../../../index.html">Home</a></b>
+            <b>-</b>
+            <b><a href="../../../../../information.html">Information</a></b>
+            <b>-</b>
+            <b><a href="../../../../../software.html">Software</a></b>
+            <b>-</b>
+            <b><a href="../../../../../media-resources.html">Media & Resources</a></b></b>
+         </center>
+      </nav>
+      <hr>
+      <h3>Configuring NextDNS for iOS, iPadOS & macOS</h3>
+      <h4>Account Configuration</h4>
+      <ol>
+         <li>Visit <a href="https://my.nextdns.io/login">NextDNS</a> and create an account</li>
+         <li>Login and make the following configuration tweaks</li>
+      </ol>
+      <h5>Security</h5>
+      <ol>
+         <li>Turn on "Enable DNS Rebinding Protection"</li>
+         <li>Turn on "Block Parked Domains"</li>
+         <li>Turn off "Google Safe Browsing"</li>
+      </ol>
+      <h5>Privacy</h5>
+      <ol>
+         <li>Click the "X" to the right of "NextDNS Ads & Trackers Blocklist"</li>
+         <li>Click the "ADD A BLOCKLIST"</li>
+         <li>Add the "oisd" blocklist, then click the "X" to return</li>
+         <li>Click "ADD" under "Native Tracking Protection" and add the manufacturer of the device you intend to use NextDNS with</li>
+      </ol>
+      <h5>Settings</h5>
+      <ol>
+         <li>Turn off "Enable Logs"</li>
+         <li>Turn on "Anonymized EDNS Client Subnet"</li>
+         <li>Turn on "Enable Cache Boost"</li>
+         <li>Turn on "CNAME Flattening"</li>
+         <li>Turn on "Enable Web3"</li>
+      </ol>
+      <h4>Installing the Configuration Profile on iOS & iPadOS</h4>
+      <ol>
+         <li>Tap "Setup" and scroll down to "Setup Guide"</li>
+         <li>Under "Configuration Profile", tap "apple.nextdns.io"</li>
+         <li>Tap "Download", then "Allow, then "Close"</li>
+         <li>Open the Settings app > General > VPN & Device Management > NextDNS</li>
+         <li>Tap "Install" and enter your passcode</li>
+         <li>Tap "Install" then "Install" again</li>
+         <li>Tap "Done"</li>
+      </ol>
+      <h4>Installing the Configuration Profile on macOS</h4>
+      <ol>
+         <li>Click "Setup" and scroll down to "Setup Guide"</li>
+         <li>Under "Configuration Profile", click "apple.nextdns.io"</li>
+         <li>Click "Download"</li>
+         <li>Open your downloads folder and run "NextDNS....mobileconfig"</li>
+         <li>Click the Apple Logo on the Menu Bar > click "System Preferences..."</li>
+         <li>Profiles > NextDNS > click "Install" and enter your password</li>
+         <li>Exit</li>
+      </ol>
+      <h4>Info</h4>
+      <ul>
+         <li>The free NextDNS account tier has a query limit of 300,000 per month</li>
+         <li>To bypass this limitation, it is recommended to create a new account per device NextDNS is configured for</li>
+      </ul>
+      <hr>
+      <footer>
+         <a href="https://github.com/sysconf16/sysconf16.github.io">
+         <img src="../../../../../assets/imgs/github.webp" style="float:right" height="16"></a>
+      </footer>
+   </body>
+</html>
