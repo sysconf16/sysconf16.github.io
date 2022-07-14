@@ -55,7 +55,7 @@
             <li><a href="https://www.sordum.org/9480/defender-control-v2-1/">Defender Control</a> | Microsoft Defender Disabler</li>
             <li><a href="https://www.oo-software.com/en/shutup10">ShutUp10++</a> | Privacy Settings Changer</li>
             <li><a href="https://wpd.app/">WPD</a> | Privacy Settings Changer</li>
-            <li><a href="https://www.grc.com/inspectre.htm">InSpectre</a> | Meltdown & Spectre Patch Manager</li>
+            <li><a href="https://www.grc.com/inspectre.htm">InSpectre</a> | Meltdown & Spectre Patch Manager <b>(on Intel Systems Only)</b></li>
          </ul>
          <li>Visit the following links and download the executables. Save the files inside the "installers" folder</li>
          <ul>
@@ -75,6 +75,7 @@
          <li>Visit the following link then download and extract the script to the "scripts" folder</li>
          <ul>
             <li><a href="https://github.com/sysconf16/jpegview-and-sumatrapdf-configurator/archive/refs/heads/main.zip">JPEGView and SumatraPDF Configurator</a> | Sets the Optimal Settings for JPEGView and SumatraPDF</li>
+            <li><a href="https://github.com/sysconf16/ltsc-2021-snip-installer/archive/refs/heads/main.zip">LTSC 2021 Snip Installer</a> | Installs the Packages Required to Restore Clipboard History & Snip & Sketch <b>(on LTSC Systems Only)</b></li>
          </ul>
       </ol>
       <h4>Managing Telemetry, Data Collection & Services</h4>
@@ -135,6 +136,7 @@
          <li>Turn off the following:</li>
          <ul>
             <li>Everything under "Local group policy"</li>
+            <li>Everything under "Microsoft Edge" (if category is visible)</li>
             <li>Everything under "Services"</li>
             <li>Everything under "Task Scheduler" except "Consolidator" and "Device Census"</li>
             <li>Everything under advanced "Local group policy" except "Allow Clipboard History", "Use OneDrive for file storage" and "Let Windows apps access account information, the camera, the microphone, notifications"</li>
@@ -202,6 +204,13 @@
       <ul>
          <li>Restart before beginning the following steps</li>
       </ul>
+      <h5>Restoring Clipboard History & Snip & Sketch (on LTSC Systems Only)</h5>
+      <ol>
+         <li>Run the ltsc-2021-snip-installer-main "runme.bat"</li>
+         <li>Click "More info" on the SmartScreen prompt, then "Run anyway" (if present)</li>
+         <li>Click "Yes" on the UAC prompt</li>
+         <li>Exit</li>
+      </ol>
       <h5>Start Menu</h5>
       <ol>
          <li>Right-click and unpin all tiles</li>
@@ -219,6 +228,9 @@
          <li>File > click "Change folder and search options"</li>
          <li>Click "Quick Access" and change to "This PC"</li>
          <li>Uncheck "Show frequently used folders in Quick access"</li>
+         <li>Copy and paste <code>C:\Users\%username%\</code> into the address bar, then press the enter key</li>
+         <li>Delete the "3D Objects" folder</li>
+         <li>Exit</li>
       </ol>
       <h5>Settings</h5>
       <ol>
@@ -371,11 +383,13 @@
          <ol>
             <li>Start Menu > MPC-HC x64 > right-click "MPC-HC x64" > More > Run as administrator</li>
             <li>View > Uncheck "Status"</li>
-            <li>View > check "Hide Menu"</li>
             <li>View > Options</li>
             <li>Under "Player", uncheck "Keep history of recently opened files" and "Remember last playlist"</li>
             <li>Under "Formats", click the green checkmark under "File extensions"</li>
-            <li>Uncheck "Use the format specific icons" and "File(s)" under "Explorer Context Icons"</li>
+            <li>Uncheck "Use the format specific icons"</li>
+            <li>Uncheck "Directory" and "Playlist" under "Explorer Context Menu"</li>
+            <li>Uncheck "Video", "Music", "DVD" and "Audio CD" under "Autoplay"</li>
+            <li>Click "Apply", then click "Set as default program"</li>
             <li>Under "Advanced" change "EnableCrashReporter" to "False"</li>
             <li>Exit</li>
          </ol>
