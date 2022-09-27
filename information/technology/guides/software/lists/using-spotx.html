@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
       <link rel="icon" href="../../../../../assets/imgs/favicon.ico">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Using BlockTheSpot</title>
+      <title>Using SpotX</title>
    </head>
    <body>
       <header>
@@ -25,7 +25,7 @@
          </center>
       </nav>
       <hr>
-      <h3>Using BlockTheSpot</h3>
+      <h3>Using SpotX</h3>
       <h4>Preparatory Tasks</h4>
       <ol>
          <li>Download and install Spotify from the following link</li>
@@ -36,12 +36,12 @@
       <h4>Installation</h4>
       <ol>
          <li>Start Menu > Windows PowerShell > click "Windows PowerShell" </li>
-         <li>Copy and paste <code>[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-Expression "& { $(Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/mrpond/BlockTheSpot/master/install.ps1') } -UninstallSpotifyStoreEdition -RemoveAdPlaceholder"</code> into the PowerShell window, then hit the enter key</li>
+         <li>Copy and paste <code>[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex "& { $((iwr -useb 'https://raw.githubusercontent.com/amd64fox/SpotX/main/Install.ps1').Content) } -confirm_spoti_recomended_over -confirm_uninstall_ms_spoti -podcasts_off -block_update_off -cache_on -start_spoti"</code> into the PowerShell window, then hit the enter key</li>
          <li>Wait for completion then exit</li>
       </ol>
       <h4>Info</h4>
       <ul>
-         <li>BlockTheSpot will stop working after every Spotify update</li>
+         <li>SpotX will stop working after every Spotify update</li>
          <li>Repeat the steps above to restore adblocking</li>
       </ul>
       <hr>
