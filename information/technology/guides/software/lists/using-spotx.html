@@ -28,15 +28,22 @@
       <h3>Using SpotX</h3>
       <h4>Preparatory Tasks</h4>
       <ol>
-         <li>Download and install Spotify from the following link</li>
+         <li>Download and install Spotify from either of the the following links depending on your operating system</li>
          <ul>
-            <li><a href="https://www.spotify.com/uk/download/windows/">Spotify</a> | Win32 Spotify Installer</li>
+            <li><a href="https://www.spotify.com/uk/download/windows/">Win32 Installer for Windows</a></li>
+            <li><a href="https://www.spotify.com/us/download/mac/">Installer for macOS</a></li>
          </ul>
       </ol>
-      <h4>Installation</h4>
+      <h4>On Windows</h4>
       <ol>
-         <li>Start Menu > Windows PowerShell > click "Windows PowerShell" </li>
-         <li>Copy and paste <code>[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex "& { $((iwr -useb 'https://raw.githubusercontent.com/amd64fox/SpotX/main/Install.ps1').Content) } -confirm_spoti_recomended_over -confirm_uninstall_ms_spoti -podcasts_off -block_update_off -cache_on -start_spoti"</code> into the PowerShell window, then hit the enter key</li>
+         <li>Start Menu > Windows PowerShell > click "Windows PowerShell"</li>
+         <li>Copy and paste <code>[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex "& { $((iwr -useb 'https://raw.githubusercontent.com/amd64fox/SpotX/main/Install.ps1').Content) } -confirm_spoti_recomended_over -confirm_uninstall_ms_spoti -block_update_off -cache_on"</code> into the PowerShell window, then hit the enter key</li>
+         <li>Wait for completion then exit</li>
+      </ol>
+      <h4>On macOS</h4>
+      <ol>
+         <li>Finder > Applications > Utilities > click "Terminal"</li>
+         <li>Copy and paste <code>bash <(curl -sSL https://raw.githubusercontent.com/SpotX-CLI/SpotX-Mac/main/install.sh)</code> into the Terminal window, then hit the enter key</li>
          <li>Wait for completion then exit</li>
       </ol>
       <h4>Info</h4>
