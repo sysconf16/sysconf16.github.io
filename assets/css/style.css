@@ -8,7 +8,7 @@ body {
 	max-width: 38em;
 	margin: auto;
 	color: #000000;
-	background-color: #FEFEFE;
+	background-color: #fffaf5;
 	padding: 13px;
 }
 @media (max-width: 684px) {
@@ -37,15 +37,15 @@ h1 {
 }
 h2 {
 	font-size: 2em;
-	color: #B66C02;
+	color: #B22222;
 }
 h3 {
 	font-size: 1.5em;
-	color: #B66C02;
+	color: #B22222;
 }
 h4 {
 	font-size: 1.25em;
-	color: #3AA218;
+	color: #006400;
 }
 h5 {
 	font-size: 1em;
@@ -58,7 +58,7 @@ p {
 	margin-bottom: 2.5rem;
 }
 upper {
-	color: #3AA218;
+	color: #006400;
 	vertical-align: super;
 	font-size: 35px;
 	animation: blink 3.5s linear infinite;
@@ -81,10 +81,10 @@ hr {
 a {
 	text-decoration: none;
 	border-radius: 5px;
-	color: #B66C02;
+	color: #B22222;
 }
 a:hover {
-	color: #D4C02B;
+	color: #DAA520;
 	border-bottom: 2px solid #000000;
 }
 ul {
@@ -107,10 +107,10 @@ blockquote {
 	padding-top: 0.8em;
 	padding-bottom: 0.8em;
 	padding-right: 0.8em;
-	border-left: 5px solid #D4C02B;
+	border-left: 5px solid #DAA520;
 	margin-bottom: 2.5rem;
 	border-radius: 12px;
-	background-color: #FFFFFF;
+	background-color: #fffaf5;
 }
 blockquote p {
 	margin-bottom: 0;
@@ -123,7 +123,7 @@ img, video {
 	margin-bottom: 0.5rem;
 }
 pre {
-	background-color: #FFFFFF;
+	background-color: #fffaf5;
 	display: block;
 	padding: 1em;
 	overflow-x: auto;
@@ -134,10 +134,10 @@ pre {
 code {
 	font-size: 0.9em;
 	padding: 0 0.5em;
-	color: #3AA218;
+	color: #006400;
 	font-weight: bold;
 	border-radius: 12px;
-	background-color: #FFFFFF;
+	background-color: #fffaf5;
 	white-space: pre-wrap;
 }
 pre>code {
@@ -153,10 +153,10 @@ table {
 }
 td, th {
 	padding: 0.5em;
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid #fffaf5;
 }
 input, textarea {
-	border: 1px solid #FFFFFF;
+	border: 1px solid #fffaf5;
 }
 input:focus, textarea:focus {
 	border: 0px solid;
@@ -171,8 +171,8 @@ textarea {
 	text-decoration: none;
 	font-weight: bold;
 	white-space: nowrap;
-	background-color: #3AA218;
-	color: #ffffff;
+	background-color: #006400;
+	color: #fffaf5;
 	border-radius: 12px;
 	border: 0px solid;
 	cursor: pointer;
@@ -183,13 +183,13 @@ textarea {
 	opacity: .5;
 }
 .button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type="submit"]:focus:enabled, input[type="submit"]:hover:enabled, input[type="reset"]:focus:enabled, input[type="reset"]:hover:enabled, input[type="button"]:focus:enabled, input[type="button"]:hover:enabled {
-	background-color: #B66C02;
-	border-color: #B66C02;
+	background-color: #DAA520;
+	border-color: #DAA520;
 	color: #ffffff;
 	outline: 0;
 }
 textarea, select, input {
-	color: #FFFFFF;
+	color: #fffaf5;
 	padding: 6px 10px;
 	margin-bottom: 10px;
 	background-color: #f7f7f7;
