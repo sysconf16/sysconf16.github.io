@@ -1,14 +1,14 @@
 html {
 	font-size: 62.5%;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 body {
-	font-size: 1.8rem;
+	font-size: 1.9rem;
 	line-height: 1.618;
 	max-width: 38em;
 	margin: auto;
 	color: #000000;
-	background-color: #FFFFFF;
+	background-color: #F8F8FF;
 	padding: 13px;
 }
 @media (max-width: 684px) {
@@ -21,9 +21,13 @@ body {
 		font-size: 1.35rem;
 	}
 }
+@font-face {
+    font-family: "cageroll";
+    src: url('../fonts/cageroll.otf');
+}
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.1;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	margin-top: 3rem;
 	margin-bottom: 1.5rem;
@@ -33,19 +37,20 @@ h1, h2, h3, h4, h5, h6 {
 	word-break: break-word;
 }
 h1 {
-	font-size: 3em;
+	font-size: 3.5em;
+	font-family: "cageroll";
 }
 h2 {
 	font-size: 2em;
-	color: #B22222;
+	color: #283b80;
 }
 h3 {
 	font-size: 1.5em;
-	color: #B22222;
+	color: #283b80;
 }
 h4 {
 	font-size: 1.25em;
-	color: #006400;
+	color: #545761;
 }
 h5 {
 	font-size: 1em;
@@ -58,7 +63,7 @@ p {
 	margin-bottom: 2.5rem;
 }
 upper {
-	color: #006400;
+	color: #545761;
 	vertical-align: super;
 	font-size: 35px;
 	animation: blink 3.5s linear infinite;
@@ -81,10 +86,10 @@ hr {
 a {
 	text-decoration: none;
 	border-radius: 5px;
-	color: #B22222;
+	color: #283b80;
 }
 a:hover {
-	color: #DAA520;
+	color: #aec1e9;
 	border-bottom: 2px solid #000000;
 }
 ul {
@@ -107,7 +112,7 @@ blockquote {
 	padding-top: 0.8em;
 	padding-bottom: 0.8em;
 	padding-right: 0.8em;
-	border-left: 5px solid #DAA520;
+	border-left: 5px solid #e0ecf6;
 	margin-bottom: 2.5rem;
 	border-radius: 12px;
 	background-color: #FFFFFF;
@@ -134,7 +139,7 @@ pre {
 code {
 	font-size: 0.9em;
 	padding: 0 0.5em;
-	color: #006400;
+	color: #545761;
 	font-weight: bold;
 	border-radius: 12px;
 	background-color: #FFFFFF;
@@ -171,7 +176,7 @@ textarea {
 	text-decoration: none;
 	font-weight: bold;
 	white-space: nowrap;
-	background-color: #006400;
+	background-color: #545761;
 	color: #FFFFFF;
 	border-radius: 12px;
 	border: 0px solid;
@@ -183,8 +188,8 @@ textarea {
 	opacity: .5;
 }
 .button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type="submit"]:focus:enabled, input[type="submit"]:hover:enabled, input[type="reset"]:focus:enabled, input[type="reset"]:hover:enabled, input[type="button"]:focus:enabled, input[type="button"]:hover:enabled {
-	background-color: #DAA520;
-	border-color: #DAA520;
+	background-color: #aec1e9;
+	border-color: #aec1e9;
 	color: #FFFFFF;
 	outline: 0;
 }
@@ -209,4 +214,7 @@ label, legend, fieldset {
 	display: block;
 	margin-bottom: .5rem;
 	font-weight: 600;
+}
+footer {
+	text-align: center;
 }

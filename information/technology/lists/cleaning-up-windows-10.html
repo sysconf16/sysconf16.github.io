@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="../../../assets/css/style.css">
+      <meta charset="UTF-8">
+      <link rel="icon" href="../../../assets/imgs/favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cleaning-up Windows 10</title>
+   </head>
+   <body>
+      <header>
+         <center>
+            <h1>SYSCONF<upper>16</upper></h1>
+         </center>
+      </header>
+      <nav>
+         <center>
+            <b><a href="../../../index.html">Home</a></b>
+            <b>-</b>
+            <b><a href="../../../information.html">Information</a></b>
+            <b>-</b>
+            <b><a href="../../../software.html">Software</a></b>
+            <b>-</b>
+            <b><a href="../../../media-resources.html">Media & Resources</a></b></b>
+         </center>
+      </nav>
+      <hr>
+      <h3>Cleaning-up Windows 10</h3>
+      <h4>Collecting Tools</h4>
+      <ol>
+         <li>Visit the following links on the target system and download the <b>portable</b> executable archives. Extract and place the folders on the desktop</li>
+         <ul>
+            <li><a href="https://www.bleachbit.org/download/windows">BleachBit</a> | FOSS System Cleaner</li>
+            <li><a href="https://privazer.com/en/download.php">PrivaZer</a> | System Cleaner</li>
+            <li><a href="https://www.ccleaner.com/ccleaner/builds">CCleaner</a> | System Cleaner</li>
+            <li><a href="https://www.uwe-sieber.de/misc_tools_e.html">Device Cleanup Tool</a> | Windows Device History Remover</li>
+         </ul>
+      </ol>
+      <h4>Windows Techniques 1</h4>
+      <h5>User Folders</h5>
+      <ol>
+         <li>Hit "Win + E" on your keyboard to open an Explorer window</li>
+         <li>Delete old or unnecessary files from "C:\", "Desktop", "Documents", "Downloads", "Music", "Pictures" and "Videos"</li>
+         <li>Exit</li>
+      </ol>
+      <h5>Existing Applications</h5>
+      <ol>
+         <li>Start Menu > Settings > Apps > Apps & Features</li>
+         <li>Uninstall any apps no longer required</li>
+         <li>Exit and restart</li>
+      </ol>
+      <h5>Start Menu</h5>
+      <ol>
+         <li>Hit "Win + E" on your keyboard to open an Explorer window</li>
+         <li>Copy and paste <code>C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs</code> into the address bar, then press the enter key</li>
+         <li>Move application shortcuts located in a folder into the "Programs" folder (e.g., "MPC-HC x64" in the "MPC-HC x64" folder should be moved directly into <code>C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs</code> and "Uninstall MPC-HC x64" should be left in the "MPC-HC x64" folder)</li>
+         <li>Delete any residual folders (e.g., the "MPC-HC x64" folder should be deleted)</li>
+         <li>Repeat with <code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs</code></li>
+         <li>Exit</li>
+      </ol>
+      <h5>Program Files</h5>
+      <ol>
+         <li>Hit "Win + E" on your keyboard to open an Explorer window</li>
+         <li>Copy and paste <code>C:\Program Files</code> into the address bar, then press the enter key</li>
+         <li>Delete any folders related to uninstalled applications</li>
+         <li>Repeat for <code>C:\Program Files (x86)</code></li>
+         <li>Exit</li>
+      </ol>
+      <h5>Program Data</h5>
+      <ol>
+         <li>Hit "Win + E" on your keyboard to open an Explorer window</li>
+         <li>Type "%programdata% into the address bar, then press the enter key</li>
+         <li>Delete any folders related to uninstalled applications</li>
+         <li>Exit</li>
+      </ol>
+      <h5>App Data</h5>
+      <ol>
+         <li>Hit "Win + E" on your keyboard to open an Explorer window</li>
+         <li>Copy and paste <code>C:\Users\%username%\AppData\Roaming</code> into the address bar, then press the enter key</li>
+         <li>Delete any folders related to uninstalled applications</li>
+         <li>Copy and paste <code>C:\Users\%username%\AppData\Local</code> into the address bar, then press the enter key</li>
+         <li>Delete any folders related to uninstalled applications, and any "cache" folders</li>
+         <li>Exit</li>
+      </ol>
+      <h5>Registry</h5>
+      <ol>
+         <li>Hit "Win + R" on your keyboard, type "regedit", then press the enter key</li>
+         <li>Copy and paste <code>Computer\HKEY_CURRENT_USER\SOFTWARE</code> into the address bar, then press the enter key</li>
+         <li>Hit "Win + R" on your keyboard, type "regedit", then press the enter key</li>
+         <li>Delete any folders related to uninstalled applications</li>
+         <li>Repeat for <code>Computer\HKEY_LOCAL_MACHINE\SOFTWARE</code></li>
+         <li>Exit</li>
+      </ol>
+      <h5>Temp</h5>
+      <ol>
+         <li>Hit "Win + E" on your keyboard to open an Explorer window</li>
+         <li>Type "%temp%" into the address bar, then press the enter key</li>
+         <li>Hit "Ctrl + A" on your keyboard to select all files and folders</li>
+         <li>Hit "Del" on your keyboard</li>
+         <li>If prompted to provide administrator permission, check "Do this for all current items" and click "Continue"</li>
+         <li>If an action cannot be completed, check "Do this for all current items" and click "Skip"</li>
+         <li>Exit</li>
+      </ol>
+      <h4>Using Tools</h4>
+      <h5>Device Cleanup</h5>
+      <ol>
+         <li>In the "tools" folder, right-click "DeviceCleanup" then click "Run as administrator"</li>
+         <li>Hit "Ctrl + A" on your keyboard to select all items</li>
+         <li>Devices > click "Remove selected"</li>
+         <li>Exit</li>
+      </ol>
+      <h5>CCleaner</h5>
+      <ol>
+         <li>Open "CCleaner64" from the "tools" folder</li>
+         <li>Registry > click "Scan for Issues"</li>
+         <li>Click "Review selected Issues...", then "No", then "Fix All Selected Issues"</li>
+         <li>Repeat steps 2 and 3 once more</li>
+         <li>Exit</li>
+      </ol>
+      <h5>PrivaZer</h5>
+      <ol>
+         <li>Open "PrivaZer" from the "tools" folder</li>
+         <li>Click "Cancel" then click "Basic user" to change to "Advanced user"</li>
+         <li>Click "Advanced Options" > Memory > check "After each cleanup with PrivaZer" then click "OK"</li>
+         <li>Click the blue arrow to return</li>
+         <li>Click "Scan in-depth" then click "Computer"</li>
+         <li>Check all "Select scans" options</li>
+         <li>Click "Modify", click "OK" and change "Smart" to "Remove all"</li>
+         <li>Click the blue arrow to return</li>
+         <li>Click "Scan"</li>
+         <li>Click "Clean" then "Normal cleanup"</li>
+         <li>Click "OK", "Close" then exit</li>
+      </ol>
+      <h5>BleachBit</h5>
+      <ol>
+         <li>Open "bleachbit" from the "tools" folder</li>
+         <li>Click the icon in the top left, then click "Preferences"</li>
+         <li>Check "Download and update cleaners from community (winapp2.ini)" then click "Close"</li>
+         <li>Exit and reopen "bleachbit"</li>
+         <li>Check all folded categories and click "OK" to all prompts/li>
+         <li>Uncheck "Free disk space" under "System"</li>
+         <li>Click "Clean" then "Delete"</li>
+         <li>Exit</li>
+      </ol>
+      <h4>Windows Techniques 2</h4>
+      <h5>Disk Clean-up</h5>
+      <ol>
+         <li>Delete all tools</li>
+         <li>Start Menu > Windows Administrative Tools > right-click "More" > click "Run as administrator"</li>
+         <li>Check all options under "Files to delete:"</li>
+         <li>Click "OK"</li>
+         <li>Exit once complete, then restart</li>
+      </ol>
+      <br>
+      <h4>Related Guides</h4>
+      <h5><a href="./optimising-windows-10.html">Optimising Windows 10</a></h5>
+      <hr>
+      <footer>
+         <a href="https://github.com/sysconf16/sysconf16.github.io">
+            <img src="../../../assets/imgs/github.webp" height="16"></a>
+      </footer>
+   </body>
+</html>

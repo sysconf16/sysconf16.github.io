@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="../../../assets/css/style.css">
+      <meta charset="UTF-8">
+      <link rel="icon" href="../../../assets/imgs/favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Installing the Microsoft Store & Xbox App on LTSC</title>
+   </head>
+   <body>
+      <header>
+         <center>
+            <h1>SYSCONF<upper>16</upper></h1>
+         </center>
+      </header>
+      <nav>
+         <center>
+            <b><a href="../../../index.html">Home</a></b>
+            <b>-</b>
+            <b><a href="../../../information.html">Information</a></b>
+            <b>-</b>
+            <b><a href="../../../software.html">Software</a></b>
+            <b>-</b>
+            <b><a href="../../../media-resources.html">Media & Resources</a></b></b>
+         </center>
+      </nav>
+      <hr>
+      <h3>Installing the Microsoft Store & Xbox App on LTSC</h3>
+      <h4>Microsoft Store Installation</h4>
+      <ol>
+         <li>Start Menu > Windows PowerShell > right-click "Windows PowerShell" > More > Run as administrator</li>
+         <li>Type <code>wsreset -i</code> and press the enter key</li>
+         <li>Exit and wait 30-60 seconds for the Microsoft Store to appear on the Start Menu</li>
+         <li>Start Menu > click "Microsoft Store"</li>
+         <li>Click the profile icon to the right of the Search box, then click "App settings"</li>
+         <li>Uncheck "Video autoplay"</li>
+         <li>Click "Library" in the bottom left</li>
+         <li>"Update" "Store Experience Host" and "Microsoft Store"</li>
+         <li>Wait for the Microsoft Store to close and reopen it</li>
+         <li>If the options to update "Store Experience Host" and "Microsoft Store" still show in "Library", ignore and move on</li>
+      </ol>
+      <h4>Xbox App & Dependencies Installation</h4>
+      <ol>
+         <li>Type "Xbox" into the Search box and press the enter key</li>
+         <li>Click "Xbox" then click "Get"</li>
+         <li>Wait 30-60 seconds for the "Xbox" app to appear on the Start Menu</li>
+         <li>Start Menu > click "Xbox"</li>
+         <li>Click "I'LL LOOK AROUND FIRST"</li>
+         <li>Sign in > click "Settings"</li>
+         <li>General > install "Xbox Identity Provider" and "Xbox Live in-game experience"</li>
+         <li>Uncheck "Keep the app running in the background when I close it" and "Ask me for feedback about the app on this device"</li>
+         <li>Uncheck "Show themes on profiles" and "Show video preview on hover"</li>
+         <li>Close the settings window</li>
+      </ol>
+      <h4>Enabling Services & Sign-in</h4>
+      <ol>
+         <li>Hit "Win + S" on your keyboard to open Search</li>
+         <li>Type "Services" and click "Services"</li>
+         <li>Scroll to the bottom of the list</li>
+         <li>Right-click "Xbox Live Auth Manager" > click "Properties"</li>
+         <li>Change "Disabled" to "Automatic", then click "OK"</li>
+         <li>Repeat for "Xbox Live Game Save" and "Xbox Live Networking Service"</li>
+         <li>Right-click "Xbox Live Auth Manager" > click "Start"</li>
+         <li>Repeat for "Xbox Live Game Save" and "Xbox Live Networking Service"</li>
+         <li>Exit Services and return to the Xbox app</li>
+         <li>Sign in > click "Sign in"</li>
+         <li>Login to Xbox Live using your Microsoft credentials</li>
+      </ol>
+      <hr>
+      <footer>
+         <a href="https://github.com/sysconf16/sysconf16.github.io">
+            <img src="../../../assets/imgs/github.webp" height="16"></a>
+      </footer>
+   </body>
+</html>

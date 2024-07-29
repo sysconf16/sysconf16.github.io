@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="../../../assets/css/style.css">
+      <meta charset="UTF-8">
+      <link rel="icon" href="../../../assets/imgs/favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Installing Windows 10 IoT Enterprise LTSC 2021</title>
+   </head>
+   <body>
+      <header>
+         <center>
+            <h1>SYSCONF<upper>16</upper></h1>
+         </center>
+      </header>
+      <nav>
+         <center>
+            <b><a href="../../../index.html">Home</a></b>
+            <b>-</b>
+            <b><a href="../../../information.html">Information</a></b>
+            <b>-</b>
+            <b><a href="../../../software.html">Software</a></b>
+            <b>-</b>
+            <b><a href="../../../media-resources.html">Media & Resources</a></b></b>
+         </center>
+      </nav>
+      <hr>
+      <h3>Installing Windows 10 IoT Enterprise LTSC 2021</h3>
+      <h4>Prerequisites</h4>
+      <ul>
+         <li>Computer with an internet connection</li>
+         <li>Blank 8GB+ USB stick</li>
+         <li>All existing data from the target computer backed up onto an external drive or cloud storage</li>
+      </ul>
+      <h4>Creating Installation Media</h4>
+      <h5>Flashing the ISO Image</h5>
+      <ol>
+         <li>Using a working Windows computer, visit <a href="../../../../../software/desktop-tools-scripts/lists/windows-10-enterprise-ltsc-2021.html">this</a> link to download the 64-bit ISO en_gb image of the Windows installation media</li>
+         <li>Download the portable Rufus application <a href="https://rufus.ie/">here</a></li>
+         <li>Insert the USB stick into the computer and ensure that it is empty</li>
+         <li>Run Rufus and choose the USB stick</li>
+         <li>Click "SELECT" and navigate to the downloaded ISO image</li>
+         <li>Ignore all "Windows User Experience" options and click "OK"</li>
+         <li>Click "START" and wait for the process to complete</li>
+      </ol>
+      <h5>Collecting Installers & Tools</h5>
+      <ol>
+         <li>In the root of the USB drive, create a folder named "files"</li>
+         <li>In "files" folder, create 2 further folders named "drivers" and "scripts"</li>
+         <li>Visit the following links relevant to your hardware and download the executables. Save the files inside the "drivers" folder</li>
+         <ul>
+            <li><a href="https://www.techpowerup.com/download/techpowerup-nvcleanstall/">NVCleanstall</a> | for Nvidia GPUs</li>
+            <li><a href="https://www.amd.com/en/support">AMD Drivers and Support</a> | for AMD GPUs & Chipsets</li>
+            <li><a href="https://www.intel.com/content/www/us/en/download-center/home.html">Download Drivers & Software</a> | for Intel iGPUs & Chipsets</li>
+         </ul>
+         <li>Visit the following links, then download and extract the scripts to the "scripts" folder</li>
+         <ul>
+            <li><a href="https://github.com/sysconf16/ltsc-2021-activator/archive/refs/heads/main.zip">LTSC 2021 Activator</a> | Converts Enterprise to IoT Enterprise & Activates via HWID</li>
+            <li><a href="https://github.com/sysconf16/ltsc-2021-snip-installer/archive/refs/heads/main.zip">LTSC 2021 Snip Installer</a> | Installs the Packages Required to Restore Clipboard History & Snip & Sketch</li>
+         </ul>
+      </ol>
+      <h4>Installation</h4>
+      <h5>Booting from USB</h5>
+      <ol>
+         <li>Turn off the target computer and insert the USB stick</li>
+         <li>Push the power button while repeatedly pressing the boot menu key. A list for several manufacturers can be found <a href="./boot-menu-keys.html">here</a></li>
+         <li>Select the UEFI option for your USB drive from the list</li>
+      </ol>
+      <h5>Installing to Disk</h5>
+      <ol>
+         <li>Continue through the wizard, then click "Custom: Install Windows only (advanced)"</li>
+         <li>Select and delete all partitions on the desired boot drive so that only a single "Drive X Unallocated Space" is listed</li>
+         <li>Select "Drive X Unallocated Space" and click "Next"</li>
+         <li>Wait for the installation to complete</li>
+      </ol>
+      <h5>Out-of-Box-Experience (OOBE)</h5>
+      <ol>
+         <li>Disconnect your ethernet cable if using a wired connection</li>
+         <li>Continue through the wizard, then click "I don't have internet" when prompted to create an internet connection and "Continue with limited setup"</li>
+         <li>Click "No" for all privacy settings and choose "Send Required diagnostic data"</li>
+         <li>At the desktop, re-connect your ethernet cable or connect to Wi-Fi</li>
+      </ol>
+      <h4>Core Functionality & Configuration</h4>
+      <h5>Installing Hardware Drivers</h5>
+      <ol>
+         <li>Navigate to the "drivers" folder on the USB stick</li>
+         <li>Install each driver package</li>
+         <li>Restart after the final package has been installed</li>
+      </ol>
+      <h5>Activating Windows</h5>
+      <ol>
+         <li>Navigate to the "scripts" folder on the USB stick</li>
+         <li>Copy the "ltsc-2021-activator-main" folder to the desktop</li>
+         <li>Run the ltsc-2021-activator-main "runme.cmd"</li>
+         <li>Click "More info" on the SmartScreen prompt, then "Run anyway"</li>
+         <li>Click "Yes" on the UAC prompt</li>
+      </ol>
+      <h5>Restoring Clipboard History & Snip & Sketch</h5>
+      <ol>
+         <li>Navigate to the "scripts" folder on the USB stick</li>
+         <li>Copy the "ltsc-2021-snip-installer-main" folder to the desktop</li>
+         <li>Run the ltsc-2021-snip-installer-main "runme.bat"</li>
+         <li>Click "More info" on the SmartScreen prompt, then "Run anyway"</li>
+         <li>Click "Yes" on the UAC prompt</li>
+      </ol>
+      <h5>Running Windows Update</h5>
+      <ol>
+         <li>Start Menu > Settings > Update & Security > Windows Update</li>
+         <li>Check for and install all available updates</li>
+         <li>Restart</li>
+      </ol>
+      <br>
+      <h4>Related Guides</h4>
+      <h5><a href="./optimising-windows-10.html">Optimising Windows 10</a></h5>
+      <h5><a href="./configuring-microsoft-edge-on-windows.html">Configuring Microsoft Edge on Windows</a></h5>
+      <h5><a href="./installing-the-microsoft-store-xbox-app-on-ltsc.html">Installing the Microsoft Store & Xbox App on LTSC (optional)</a></h5>
+      <h5><a href="./disabling-enhanced-pointer-precision.html">Disabling Enhanced Pointer Precision (optional)</a></h5>
+      <h5><a href="./cleaning-up-windows-10.html">Cleaning-up Windows 10</a></h5>
+      <hr>
+      <footer>
+      <a href="https://github.com/sysconf16/sysconf16.github.io">
+         <img src="../../../assets/imgs/github.webp" height="16"></a>
+      </footer>
+   </body>
+</html>
