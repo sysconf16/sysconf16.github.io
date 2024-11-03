@@ -55,7 +55,6 @@
          </ul>
          <li>Visit the following links, then download and extract the scripts to the "scripts" folder</li>
          <ul>
-            <li><a href="https://github.com/sysconf16/ltsc-2021-activator/archive/refs/heads/main.zip">LTSC 2021 Activator</a> | Converts Enterprise to IoT Enterprise & Activates via HWID</li>
             <li><a href="https://github.com/sysconf16/ltsc-2021-snip-installer/archive/refs/heads/main.zip">LTSC 2021 Snip Installer</a> | Installs the Packages Required to Restore Clipboard History & Snip & Sketch</li>
          </ul>
       </ol>
@@ -63,7 +62,7 @@
       <h5>Booting from USB</h5>
       <ol>
          <li>Turn off the target computer and insert the USB stick</li>
-         <li>Push the power button while repeatedly pressing the boot menu key. A list for several manufacturers can be found <a href="./boot-menu-keys.html">here</a></li>
+         <li>Push the power button while repeatedly pressing the boot menu key.
          <li>Select the UEFI option for your USB drive from the list</li>
       </ol>
       <h5>Installing to Disk</h5>
@@ -89,11 +88,12 @@
       </ol>
       <h5>Activating Windows</h5>
       <ol>
-         <li>Navigate to the "scripts" folder on the USB stick</li>
-         <li>Copy the "ltsc-2021-activator-main" folder to the desktop</li>
-         <li>Run the ltsc-2021-activator-main "runme.cmd"</li>
-         <li>Click "More info" on the SmartScreen prompt, then "Run anyway"</li>
-         <li>Click "Yes" on the UAC prompt</li>
+         <li>Hit "Win + S" and type "Powershell", click to open</li>
+         <li>Type <code>irm https://get.activated.win | iex</code> and hit enter</li>
+         <li>Type 6 to "Change Windows Edition"</li>
+         <li>Type 1 to change to "IoTEnterpriseS"</li>
+         <li>Re-run the script and type 1 to activate via "HWID"</li>
+         <li>Exit</li>
       </ol>
       <h5>Restoring Clipboard History & Snip & Sketch</h5>
       <ol>
