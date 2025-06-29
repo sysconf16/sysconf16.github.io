@@ -218,3 +218,75 @@ label, legend, fieldset {
 footer {
 	text-align: center;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #f0f0f0;
+    background-color: #1a1a1a;
+  }
+
+  h2, h3 {
+    color: #c0d4f0; /* lighter version of #304461 */
+  }
+
+  h4 {
+    color: #b0b3c0; /* lighter version of #545761 */
+  }
+
+  upper {
+    color: #b0b3c0; /* lighter version of #545761 */
+  }
+
+  hr {
+    border-color: #f0f0f0;
+  }
+
+  a {
+    color: #c0d4f0; /* lighter version of #304461 */
+  }
+
+  a:hover {
+    color: #aec1e9; /* keep as is */
+    border-bottom: 2px solid #f0f0f0;
+  }
+
+  blockquote {
+    border-left: 5px solid #304461;
+    background-color: #2a2a2a;
+  }
+
+  pre, code {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  td, th {
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  input, textarea {
+    background-color: #2a2a2a;
+    border: 1px solid #2a2a2a;
+    color: #f0f0f0;
+  }
+
+  .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    background-color: #545761;
+    color: #f0f0f0;
+  }
+
+  .button:focus:enabled,
+  .button:hover:enabled,
+  button:focus:enabled,
+  button:hover:enabled,
+  input[type="submit"]:focus:enabled,
+  input[type="submit"]:hover:enabled,
+  input[type="reset"]:focus:enabled,
+  input[type="reset"]:hover:enabled,
+  input[type="button"]:focus:enabled,
+  input[type="button"]:hover:enabled {
+    background-color: #304461;
+    border-color: #304461;
+    color: #f0f0f0;
+  }
+}
