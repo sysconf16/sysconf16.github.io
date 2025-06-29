@@ -42,11 +42,11 @@ h1 {
 }
 h2 {
 	font-size: 2em;
-	color: #283b80;
+	color: #304461;
 }
 h3 {
 	font-size: 1.5em;
-	color: #283b80;
+	color: #304461;
 }
 h4 {
 	font-size: 1.25em;
@@ -86,7 +86,7 @@ hr {
 a {
 	text-decoration: none;
 	border-radius: 5px;
-	color: #283b80;
+	color: #304461;
 }
 a:hover {
 	color: #aec1e9;
