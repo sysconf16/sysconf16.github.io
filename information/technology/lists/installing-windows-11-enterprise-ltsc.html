@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="../../../assets/css/style.css">
+      <meta charset="UTF-8">
+      <link rel="icon" href="../../../assets/imgs/favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Installing Windows 11 Enterprise LTSC</title>
+   </head>
+   <body>
+      <header>
+         <center>
+            <h1>SYSCONF<upper>16</upper></h1>
+         </center>
+      </header>
+      <nav>
+         <center>
+            <b><a href="../../../index.html">Home</a></b>
+            <b>-</b>
+            <b><a href="../../../information.html">Information</a></b>
+            <b>-</b>
+            <b><a href="../../../software.html">Software</a></b>
+            <b>-</b>
+            <b><a href="../../../media-resources.html">Media & Resources</a></b></b>
+         </center>
+      </nav>
+      <hr>
+      <h3>Installing Windows 11 Enterprise LTSC</h3>
+      <h4>Prerequisites</h4>
+      <ul>
+         <li>Computer with an internet connection</li>
+         <li>Blank 16 GB+ USB stick</li>
+         <li>All existing data from the target computer backed up onto an external drive or cloud storage</li>
+         <li>Ensure Secure Boot and TPM are enabled in your BIOS</li>
+      </ul>
+      <h4>Creating Installation Media</h4>
+      <h5>Flashing the ISO Image</h5>
+      <ol>
+         <li>Using a working Windows computer, visit <a href="https://buzzheavier.com/ed3qieys8404">this</a> link to download the 64-bit en_gb ISO image of the Windows installation media</li>
+         <li>Download the portable Rufus application <a href="https://rufus.ie/">here</a></li>
+         <li>Insert the USB stick into the computer and ensure that it is empty</li>
+         <li>Run Rufus and choose the USB stick</li>
+         <li>Click "SELECT" and navigate to the downloaded ISO image</li>
+         <li>Ignore all "Windows User Experience" options and click "OK"</li>
+         <li>Click "START", click "OK" to any prompts regarding a revoked UEFI bootloader, and keep the options checked for "Remove requirement for 4GB+ RAM, Secure Boot and TPM 2.0" and "Remove requirement for an online Microsoft account"</li>
+      </ol>
+      <h5>Collecting Installers & Tools</h5>
+      <ol>
+         <li>In the root of the USB drive, create a folder named "files"</li>
+         <li>In the "files" folder, create three further folders named "drivers", "installers" and "configs"</li>
+         <li>Visit the following links relevant to your hardware, and save the relevant installer executables inside the "drivers" folder</li>
+         <ul>
+            <li><a href="https://www.nvidia.com/en-gb/geforce/drivers/">Download the Latest Official GeForce Drivers</a></li>
+            <li><a href="https://www.amd.com/en/support">AMD Drivers and Support</a></li>
+            <li><a href="https://www.intel.com/content/www/us/en/download-center/home.html">Download Intel Drivers & Software</a></li>
+         </ul>
+            <li>Visit the following links and save the installer executables inside the "installers" folder</li>
+         <ul>
+            <li><a href="https://www.7-zip.org/">7-Zip</a></li>
+            <li><a href="https://github.com/sylikc/jpegview/releases">JPEGView</a></li>
+            <li><a href="https://github.com/Aleksoid1978/MPC-BE/releases">MPC-BE</a></li>
+            <li><a href="https://www.sumatrapdfreader.org/download-free-pdf-viewer">SumatraPDF</a></li>
+            <li><a href="https://brave.com/">Brave</a></li>
+         </ul>
+            <li>Visit the following links and save the files inside the "configs" folder</li>
+         <ul>
+            <li><a href="https://github.com/sysconf16/windows-11-core-software-configurator/archive/refs/heads/main.zip">Windows 11 Core Software Configurator</a></li>
+            <li><a href="https://github.com/sysconf16/configs-and-scripts/blob/main/Win11Debloat/Win11Debloat-Config-20261031.json">Win11Debloat Config</a></li>
+            <li><a href="https://github.com/sysconf16/configs-and-scripts/blob/main/ooshutup10/ooshutup10.cfg">OOShutUp10 Config</a></li>
+            <li><a href="https://github.com/sysconf16/configs-and-scripts/blob/main/privacy.sexy/privacy-script.bat">privacy.sexy Script</a></li>
+            <li><a href="https://github.com/sysconf16/configs-and-scripts/blob/main/winutil/winutilconfig.json">winutil Config</a></li>
+            <li><a href="https://www.grc.com/inspectre.htm">InSpectre</a> <b>(on Intel Systems Only)</b></li>
+            <li><a href="https://www.ccleaner.com/ccleaner/builds">CCleaner</a></li>
+            <li><a href="https://privazer.com/en/download.php">PrivaZer</a></li>
+         </ul>
+      </ol>
+      <h4>Installation</h4>
+      <h5>Booting from USB</h5>
+      <ol>
+         <li>Turn off the target computer and insert the USB stick</li>
+         <li>Push the power button while repeatedly pressing the boot menu key</li>
+         <li>Select the UEFI option for your USB drive from the list</li>
+      </ol>
+      <h5>Installing to Disk</h5>
+      <ol>
+         <li>Continue through the wizard, selecting and deleting all partitions on the desired boot drive so that only a single "Drive X Unallocated Space" is listed</li>
+         <li>Select "Drive X Unallocated Space", click "Next", and continue through the wizard</li>
+         <li>Wait for the installation to complete</li>
+      </ol>
+      <h5>Out-of-Box Experience (OOBE)</h5>
+      <ol>
+         <li>Continue through the wizard, creating an offline user account</li>
+         <li>Click "No" for all privacy settings and choose "Required only" when asked about sending diagnostic data to Microsoft</li>
+      </ol>
+      <h4>Core Applications & Basic Configuration</h4>
+      <h5>Disabling UAC</h5>
+      <ol>
+         <li>Hit "Win + S" on your keyboard to open Search</li>
+         <li>Type "UAC" and click "Change User Account Control settings"</li>
+         <li>Slide the blue slider to "Never notify" and click "OK"</li>
+         <li>Click "Yes"</li>
+      </ol>
+      <h5>Installing Hardware Drivers</h5>
+      <ol>
+         <li>Once the desktop has been reached, navigate to the "drivers" folder on the USB stick</li>
+         <li>Install each driver package and restart after the final package has been installed</li>
+         <li>Reboot and, once at the desktop again, connect to the internet if not already connected</li>
+      </ol>
+      <h5>Running Windows Update</h5>
+      <ol>
+        <li>Hit "Win + S", type "Settings", and click to open</li>
+         <li>Click "Windows Update" and "Check for updates"</li>
+         <li>Install any available updates and restart</li>
+      </ol>
+      <h5>Installing Software</h5>
+      <ul>
+         <li>Install all software in the "installers" folder</li>
+         <li>Hit "Win + S", search for "Settings", then open it</li>
+         <li>Navigate to Apps > Installed Apps, then uninstall Snipping Tool by clicking on "..."</li>
+      </ul>
+      <h5>Windows 11 Core Software Configurator</h5>
+      <ol>
+         <li>Run the windows-11-core-software-configurator "runme.bat" to activate Windows, install the new Snipping Tool, and configure the newly installed applications</li>
+         <li>Press any key to exit once complete</li>
+      </ol>
+      <h5>Control Panel</h5>
+      <ol>
+         <li>Hit "Win + S" on your keyboard to open Search</li>
+         <li>Type "Control Panel" and click "Control Panel"</li>
+         <li>Click Programs > "Turn Windows Features on or off"</li>
+         <li>Uncheck the following, then click "OK":</li>
+         <ul>
+            <li>Remote Differential Compression API Support</li>
+            <li>SMB Direct</li>
+         </ul>
+      </ol>
+      <h5>System Configuration</h5>
+      <ol>
+         <li>Hit "Win + S" on your keyboard to open Search</li>
+         <li>Type "msconfig" and click "System Configuration"</li>
+         <li>Boot > check "No GUI boot" > click "OK" > click "Exit without restart"</li>
+      </ol>
+      <h5>Settings</h5>
+      <ol>
+         <li>Hit "Win + S" on your keyboard to search for "Settings" and open</li>
+         <li>Under "Privacy & security", click "Device encryption", turn off the toggle, then click "Turn off" to confirm</li>
+         <li>Await completion, then exit</li>
+      </ol>
+      <h5>Setting Default Apps</h5>
+      <ol>
+         <li>Hit "Win + S" on your keyboard to search for "SumatraPDF" and "JPEGView"</li>
+         <li>In SumatraPDF, click the hamburger menu in the top left > Settings > click "Options"</li>
+         <li>Click "Make SumatraPDF the default PDF viewer" and exit</li>
+         <li>In JPEGView, click "Cancel" and right-click the black space > Settings/Admin > click "Set as the default viewer", click "OK", and exit</li>
+         <li>Hit "Win + S" on your keyboard to search for "MPC-BE x64", right-click and "Run as administrator"</li>
+         <li>Click View > click "Options", then under "Player" > "Formats", click "All" and exit</li>
+         <li>Hit "Win + S" on your keyboard to search for  "7-Zip File Manager", right-click and "Run as administrator"</li>
+         <li>Tools > System > Associate 7-Zip with: > click the "+" above "All users", then manually select each file type and set it to 7z</li>
+         <li>Click "OK" and exit</li>
+      </ol>
+      <h4>Optimising Telemetry, Services & Performance</h4>
+      <h5>Disabling Real-time Protection</h5>
+      <ol>
+         <li>Hit "Win + S" on your keyboard, type "Windows Security", and open it</li>
+         <li>Click "Virus & threat protection", then "Manage settings", then turn the "Real-time protection" toggle off</li>
+         <li>Close Windows Security</li>
+      </ol>
+      <h5>privacy.sexy</h5>
+      <ol>
+         <li>In the "scripts" folder, right-click "privacy-script.bat", then click "Run as administrator"</li>
+         <li>Restart once the script is complete</li>
+      </ol>
+      <h5>Win11Debloat</h5>
+      <ol>
+         <li>Hit "Win + S" and type "PowerShell", then click to open</li>
+         <li>Copy and paste <code>& ([scriptblock]::Create((irm "https://debloat.raphi.re/")))</code> and press any key to continue</li>
+         <li>Click "Custom Setup", then click the hamburger menu in the top right > "Import config" and select "Win11Debloat-Config-20261031.json" from the "configs" folder</li>
+         <li>Click "Import Settings", "OK", then "Apply Changes" and click "Close" when complete</li>
+      </ol>
+      <h5>winutil</h5>
+      <ol>
+         <li>Hit "Win + S" and type "PowerShell", then click to open</li>
+         <li>Copy and paste <code>irm https://christitus.com/win | iex</code> and press Enter</li>
+         <li>Click "Tweaks" and disable the following preferences:</li>
+         <ul>
+            <li>Logon Screen Acrylic Blur</li>
+            <li>Microsoft Outlook New Version</li>
+            <li>S0 Sleep Network Connectivity</li>
+            <li>Start Menu Recommendations</li>
+            <li>Sticky Keys</li>
+         </ul>
+         <li>Click the cog in the top right and click "Import"</li>
+         <li>Select "Config.json" from the "configs" folder, then click "Run Tweaks"</li>
+         <li>Click "O&O ShutUp10++ - Run"</li>
+         <li>Click "File" > "Import settings..." > select "ooshutup10.cfg" from the "configs" folder > click "OK"</li>
+         <li>Click "Exit" > "No, thanks" > "Close"</li>
+         <li>Exit all applications</li>
+      </ol>
+      <h5>PrivaZer</h5>
+      <ol>
+         <li>Open "PrivaZer" from the "tools" folder</li>
+         <li>Click "Cancel"</li>
+         <li>Click "Advanced Options"</li>
+         <li>Click the "Memory" tab</li>
+         <li>Click "Stop" and "Disable" under "Wsearch Indexing"</li>
+         <li>Exit</li>
+      </ol>
+      <h5>CCleaner</h5>
+      <ol>
+         <li>Open "CCleaner64" from the "tools" folder</li>
+         <li>Click "Tools", then "Startup"</li>
+         <li>Click "Scheduled Tasks", then "CCleanerCrashReporting", then "Delete", then "OK"</li>
+         <li>Click "MicrosoftEdgeUpdateTaskMachineCore", then "Delete"</li>
+         <li>Click "MicrosoftEdgeUpdateTaskMachineUA", then "Delete"</li>
+         <li>Click "Windows Services", then check "Advanced Mode"</li>
+         <li>Attempt to disable all except the following:</li>
+         <ul>
+            <li>Apple Mobile Device Service (if present)</li>
+            <li>Microsoft Office Click-to-Run Service (if present)</li>
+            <li>NVIDIA Display Container LS (if present)</li>
+            <li>Power</li>
+            <li>Print Spooler</li>
+            <li>Windows Audio</li>
+            <li>Windows Audio Endpoint Builder</li>
+            <li>Windows Connection Manager</li>
+            <li>Windows Event Log</li>
+            <li>WLAN AutoConfig</li>
+         </ul>
+         <li>Exit</li>
+      </ol>
+      <h5>InSpectre (on Intel Systems Only)</h5>
+      <ol>
+         <li>Right-click "InSpectre" from the "tools" folder and click "Run as administrator"</li>
+         <li>Click "Disable Meltdown Protection" and "Disable Spectre Protection"</li>
+         <li>Exit</li>
+      </ol>
+      <h5>Downfall (on Intel Systems Only)</h5>
+      <ol>
+         <li>Right-click the Start Menu and click "Command Prompt (Administrator)"</li>
+         <li>Copy and paste the following: <code>"HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverride /t REG_DWORD /d 33554432 /f</code>, then hit the Enter key</li>
+         <li>Click through any prompts to modify the registry and exit</li>
+      </ol>
+      <br>
+      <h4>Related Guides</h4>
+      <h5><a href="./cleaning-up-windows.html">Cleaning-up Windows</a></h5>
+      <hr>
+      <footer>
+      <a href="https://github.com/sysconf16/sysconf16.github.io">
+         <img src="../../../assets/imgs/github.webp" height="16"></a>
+      </footer>
+   </body>
+</html>
